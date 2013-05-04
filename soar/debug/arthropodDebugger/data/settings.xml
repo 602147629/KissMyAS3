@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<arthropod>
+	<title><![CDATA[Arthropod]]></title>
+	<type><![CDATA[app]]></type>
+	<copyright>
+		<name><![CDATA[Carl Calderon]]></name>
+		<year><![CDATA[2008]]></year>
+	</copyright>
+	<settings>
+		<firstRun>0</firstRun>
+		<upgrade>
+			<!-- <lastCheck>1220980850260</lastCheck> -->
+			<lastCheck>1361326723924</lastCheck>
+			<interval>13</interval>
+			<directSite><![CDATA[http://arthropod.stopp.se/]]></directSite>
+			<empty><![CDATA[http://arthropod.stopp.se/downloads/empty.html]]></empty>
+			<airFile><![CDATA[http://arthropod.stopp.se/downloads/Arthropod.air]]></airFile>
+		</upgrade>
+		<connection>
+			<defaultPassword><![CDATA[CDC309AF]]></defaultPassword>
+			<password><![CDATA[CDC309AF]]></password>
+		</connection>
+		<font>
+			<name><![CDATA[Trebuchet MS]]></name>
+			<size><![CDATA[12]]></size>
+		</font>
+		<ignoreInternal><![CDATA[true]]></ignoreInternal>
+		<secureDomains>
+			<domain><![CDATA[*]]></domain>
+		</secureDomains>
+		<insecureDomains>
+			<domain><![CDATA[*]]></domain>
+		</insecureDomains>
+		<log>
+			<saveLog>1</saveLog>
+			<showLastLog>0</showLastLog>
+		</log>
+	</settings>
+</arthropod>

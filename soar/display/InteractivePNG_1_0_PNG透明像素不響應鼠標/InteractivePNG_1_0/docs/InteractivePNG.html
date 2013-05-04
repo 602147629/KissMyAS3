@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="supporting/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="supporting/print.css" type="text/css" media="print">
+<meta content="InteractivePNG,com.mosesSupposes.bitmap.InteractivePNG,alphaTolerance,interactivePngActive,disableInteractivePNG,drawBitmapHitArea,enableInteractivePNG" name="keywords">
+<title>com.mosesSupposes.bitmap.InteractivePNG</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="supporting/asdoc.js"></script><script type="text/javascript" language="javascript" src="supporting/cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'InteractivePNG - Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="index.html?com/mosesSupposes/bitmap/InteractivePNG.html&com/mosesSupposes/bitmap/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="supporting/images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;InteractivePNG</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class InteractivePNG"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+	<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td>com.mosesSupposes.bitmap</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class InteractivePNG</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">InteractivePNG <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="supporting/images/inherit-arrow.gif"> flash.display.MovieClip</td>
+</tr>
+</table>
+<p></p>
+  Like magic, transparent parts of a PNG in this MovieClip are ignored during mouse interactions.
+  
+  <p>No special instructions are needed to use this class if the clip's artwork
+  does not change during play, simply use this class in place of MovieClip. If the 
+  MovieClip animates or changes, you can call drawBitmapHitArea() at any time to 
+  refresh the hit area.</p>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alphaTolerance">alphaTolerance</a> : uint<div class="summaryTableDescription">
+   Set to 0 to detect hit on any pixel that is not completely transparent, or 255 
+   detect only completely opaque pixels.</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#interactivePngActive">interactivePngActive</a> : Boolean<div class="summaryTableDescription">[read-only]
+   Whether this MovieClip is using InteractivePNG functionality.</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#InteractivePNG()">InteractivePNG</a>()</div>
+<div class="summaryTableDescription">
+   InteractivePNG functionality is active from instantiation, but can
+   be turned off at any time by calling disableInteractivePNG().</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#disableInteractivePNG()">disableInteractivePNG</a>():void</div>
+<div class="summaryTableDescription">
+   Turns off the functionality of this class.</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#drawBitmapHitArea()">drawBitmapHitArea</a>(event:Event = null):void</div>
+<div class="summaryTableDescription">
+   A hit-detection bitmap is generated on the first mouse interaction with the clip,
+   but you may need to call this method or use it as an ENTER_FRAME handler to refresh
+   the hit area if the clip's shape changes during play.</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#enableInteractivePNG()">enableInteractivePNG</a>():void</div>
+<div class="summaryTableDescription">
+   Restores functionality of this class if it was previously disabled.</div>
+</td><td class="summaryTableOwnerCol">InteractivePNG</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alphaTolerance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alphaTolerance</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>alphaTolerance:uint</code>&nbsp;&nbsp;[read-write]<p>
+   Set to 0 to detect hit on any pixel that is not completely transparent, or 255 
+   detect only completely opaque pixels.
+   
+   </p><p>The default value is <code>128</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get alphaTolerance():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set alphaTolerance(value:uint):void</code>
+<br>
+</div>
+<a name="interactivePngActive"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">interactivePngActive</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>interactivePngActive:Boolean</code>&nbsp;&nbsp;[read-only]<p>
+   Whether this MovieClip is using InteractivePNG functionality.
+   
+   </p><p>Functionality is enabled by default from instantiation. Only returns 
+   false if disableInteractivePNG() has been called. (Note that setting 
+   <code>hitArea</code> or <code>mouseEnabled</code> may result in a disable 
+   in certain cases, see documentation in the class file for more information 
+   on this topic.)</p> 
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get interactivePngActive():Boolean</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#disableInteractivePNG" target="">disableInteractivePNG</a>
+<br>
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#enableInteractivePNG" target="">enableInteractivePNG</a>
+</div>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="InteractivePNG()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">InteractivePNG</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function InteractivePNG()</code><p>
+   InteractivePNG functionality is active from instantiation, but can
+   be turned off at any time by calling disableInteractivePNG().
+   </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="disableInteractivePNG()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">disableInteractivePNG</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function disableInteractivePNG():void</code><p>
+   Turns off the functionality of this class. Note that setting 
+   <code>hitArea</code> or <code>mouseEnabled</code> may result in 
+   a disable in certain cases (see documentation in the class file 
+   for more information on this topic).
+   
+   </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#interactivePngActive" target="">interactivePngActive</a>
+<br>
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#enableInteractivePNG" target="">enableInteractivePNG</a>
+</div>
+</div>
+<a name="drawBitmapHitArea()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">drawBitmapHitArea</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function drawBitmapHitArea(event:Event = null):void</code><p>
+   A hit-detection bitmap is generated on the first mouse interaction with the clip,
+   but you may need to call this method or use it as an ENTER_FRAME handler to refresh
+   the hit area if the clip's shape changes during play.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">event</span>:Event</code> (default = <code>null</code>)<code></code> &mdash;  Provided so this method can be used as an event handler with no extra work.
+   </td>
+</tr>
+</table>
+</div>
+<a name="enableInteractivePNG()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableInteractivePNG</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function enableInteractivePNG():void</code><p>
+   Restores functionality of this class if it was previously disabled.
+   This method will have no effect if <code>hitArea</code> has been set.
+   
+   </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#interactivePngActive" target="">interactivePngActive</a>
+<br>
+<a href="com/mosesSupposes/bitmap/InteractivePNG.html#disableInteractivePNG" target="">disableInteractivePNG</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Arthropod Log</title>
+<style type="text/css">
+* {margin: 0; padding: 0; }
+body { 
+	background: #151515;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #fefefe;
+}
+#main-container {
+	margin: 10px auto;
+	clear: both;
+	width: 774px;
+}
+#arrays {
+	float: left;
+	width: 150px;
+	background: #212121;
+	border: 1px solid #000;
+	padding: 10px;
+}
+#container {
+	float: left;
+	width: 542px;
+	background: #252525;
+	border: 1px solid #000;
+	padding: 14px;
+}
+#images {
+	width: 580px;
+	
+	margin-top: 7px;
+}
+#right-col {
+	float: left;
+	height: auto;
+	width: 580px;
+	margin-left: 5px;
+}
+#header {
+
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fefefe;
+	
+	height: 60px;
+	padding: 7px;
+	
+}
+
+/* IMAGES */
+.image {
+	float: left;
+	width: 102px;
+	padding: 4px;
+	/*height: 117px;*/
+	height: auto;
+	background: #212121;
+	margin-right: 3px;
+	margin-top: 4px;
+	border: 1px solid #000;
+	color: #000;
+}
+img {
+	background: #151515;
+}
+.image-container {
+	width: 100px;
+	height: 100px;
+	background: #151515;
+	float: left;
+	border: 1px solid #000;
+}
+.image-value {
+	float: left;
+	margin-top: 3px;
+	padding-left: 2px;
+	color: #fefefe;
+}
+
+
+
+/* ARRAY */
+.array-index {
+	color: #444;
+}
+th {
+	text-align: left;
+}
+/* HIDE */
+.array-time, .item-time, .item-type, .array-type {
+	display: none;
+}
+/* TOOLTIP */
+#tooltip {
+	position:fixed;
+	width: auto;
+	padding: 3px;
+	height: 12px;
+	background: #FEFEFE;
+	color: #000;
+/*	visibility: hidden;*/
+	display: none;
+	border: 1px solid #000;
+}
+
+</style>
+
+<script language="javascript" type="application/javascript">
+
+function init(){
+	document.onmousemove = onMouseMove;
+	attachLinkEvents();
+	document.getElementById('header').innerHTML = "Arthropod Log - " + document.lastModified;
+	
+	var arrays = getElementsByClassName(document,'div','array-value');
+	if(arrays.length < 1)
+		document.getElementById('arrays').style.display = 'none';
+}
+function onMouseMove(e) {
+	var tx;
+	var ty;
+	if (window.event){
+		tx = window.event.x;
+		ty = window.event.y;
+	}else{
+		tx = e.pageX;
+		ty = e.pageY;
+	}
+	document.getElementById('tooltip').style.left = tx + 9 + "px";
+	document.getElementById('tooltip').style.top = ty + 15 + "px";
+}
+function setStatus(msg) {
+	document.getElementById('tooltip').innerHTML = msg;
+}
+function showStatus(){
+	document.getElementById('tooltip').style.display = "block";
+}
+
+function hideStatus(e){
+	document.getElementById('tooltip').style.display = "none";
+}
+
+function showTooltip(e){
+	var t;
+	if(e.target.className == "") t = e.target.parentNode.parentNode;
+	else t = e.target.parentNode;
+	var nodes = getElementsByClassName(t,'div','item-time');
+	var time = nodes[0].innerHTML;
+	setStatus(time);
+	showStatus();
+}
+function hideTooltip(e){
+	hideStatus();
+}
+
+function attachLinkEvents() {
+	
+	var arr = getElementsByClassName(document,'div','item');
+
+	for (i=0; i<arr.length; i++) {
+		arr[i].onmouseover = showTooltip;
+		arr[i].onmouseout = hideTooltip;
+	}
+}
+function getElementsByClassName(oElm, strTagName, strClassName){
+	var arrElements = (strTagName == "*" && document.all)? document.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	strClassName = strClassName.replace(/\-/g, "\\-");
+	var oRegExp = new RegExp("(^|\\s)" + strClassName + "(\\s|$)");
+	var oElement;
+	for(var i=0; i<arrElements.length; i++){
+		oElement = arrElements[i];
+		if(oRegExp.test(oElement.className)){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+
+
+
+</script>
+
+</head>
+<body onload="init()">
+<div id="main-container">
+	<div id="header"></div>
+
+    <div id="arrays">
+    	<arthropod:array ns="com.carlcalderon.arthropod" />
+        <p class="clear">&nbsp;</p>
+    </div>
+    <div id="right-col">
+
+        <div id="container">
+            <arthropod:output ns="com.carlcalderon.arthropod" />
+            <p class="clear">&nbsp;</p>
+        </div>
+        <div id="images">
+            <arthropod:image ns="com.carlcalderon.arthropod" />
+            <p class="clear">&nbsp;</p>
+
+        </div>
+        <p class="clear">&nbsp;</p>
+    </div>
+</div>
+<div id="tooltip" />
+</body>
+</html>

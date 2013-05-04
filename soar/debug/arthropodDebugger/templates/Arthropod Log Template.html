@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Arthropod Log</title>
+<style type="text/css">
+* {margin: 0; padding: 0; }
+body { background: #151515; }
+#main-container {
+	margin: 10px auto;
+	clear: both;
+}
+#container {
+	margin: 30px auto;
+	background: #252525;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fefefe;
+	width: 600px;
+	height: auto;
+	padding: 10px;
+	border: 1px solid #000;
+}
+#arrays {
+	margin: 30px auto;
+	background: #212121;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fefefe;
+	width: 150px;
+	height: auto;
+	padding: 10px;
+	float: left;
+	border: 1px solid #000;
+}
+#images {
+	margin: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fefefe;
+	width: 600px;
+	height: auto;
+	/*padding: 10px;*/
+}
+.item-time {
+	color: #999;
+	float: left;
+	margin-right: 10px; 
+	border-right: 1px solid #000;
+	padding-right: 10px;
+}
+.array-index { color: #666; }
+.array-table { border: 0; }
+.item-type, .array-type, .array-time { display: none; }
+.item-value, .array-value { }
+.item, .array { margin-bottom: 3px; };
+.clear, .array-item { clear: both; }
+.image { float: left; margin: 10px; width: 100px; height: 130px; };
+</style>
+</head>
+<body>
+<div id="main-container">
+    <div id="arrays">
+        <arthropod:array ns="com.carlcalderon.arthropod" />
+        <p class="clear">&nbsp;</p>
+    </div>
+    <div style="height: auto;">
+        <div id="container">
+            <arthropod:output ns="com.carlcalderon.arthropod" />
+            <p class="clear">&nbsp;</p>
+        </div>
+        <div id="images">
+            <arthropod:image ns="com.carlcalderon.arthropod" />
+            <p class="clear">&nbsp;</p>
+        </div>
+        <p class="clear">&nbsp;</p>
+    </div>
+</div>
+</body>
+</html>
