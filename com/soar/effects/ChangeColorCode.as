@@ -1,4 +1,5 @@
 package {
+	import flash.display.BitmapData;
 	
 	/**
 	 * ...
@@ -28,6 +29,8 @@ package {
 			return rgb;
 		}
 		
+		
+		
 		/**
 		 * RGB 2 HEX
 		 * @param	rgb : Array
@@ -38,6 +41,7 @@ package {
 			trace("HEX :" + ChangeHEX([60, 100, 100]));
 			return hex;
 		}
+		
 		
 		private function returnRGBFun(theSourceBitmapData:BitmapData, theX:int, theY:int):String {
 			var pixelValue:uint = theSourceBitmapData.getPixel32(theX, theY);

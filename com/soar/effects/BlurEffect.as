@@ -15,7 +15,6 @@ package com.soar.effects {
 	 */
 	
 	public class BlurEffect {
-		private var bitmap:Bitmap = new Bitmap();
 		private var container:DisplayObject;
 		
 		public function BlurEffect(container:DisplayObject):void {

@@ -25,7 +25,7 @@ package com.soar.ui{
 		
 		
 		public static var BUTTON_GRADIENT:Array = [ 0xfefefe, 0xcccccc];
-		public static var BUTTON_GLOW:uint = 0x336699;
+		public static var BUTTON_GLOW:uint = 0x009DFF;
 		public static var BUTTON_LINE_STYLE:uint = 0xaaaaaa;
 		
 		

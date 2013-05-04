@@ -7,9 +7,6 @@ package com.soar.ui {
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	import flash.geom.Matrix;
-	import flash.text.TextField;
-	import flash.text.TextFormat;
-	import flash.text.TextFormatAlign;
 	
 	/**
 	 * ...
@@ -28,7 +25,7 @@ package com.soar.ui {
 		private var spreadMethod:String = "reflect";
 		private var interpolationMethod:String = "LINEAR_RGB";
 		private var focalPointRatio:Number = 1;
-		private var ellipse:int = 10;
+		private var ellipse:int = 5;
 		
 		protected var _label:Label;
 		protected var _labelText:String = "";
@@ -66,26 +63,28 @@ package com.soar.ui {
 		}
 		
 		private function mouseOutHandler(e:MouseEvent):void {
-			TweenLite.to(this, 0.3, {glowFilter: {color: null, alpha: 0, blurX: 0, blurY: 0}});
+			TweenLite.to(this, 0.2, {glowFilter: {color: null, alpha: 0, blurX: 0, blurY: 0 , strength:0}});
 		}
 		
 		private function mouseOverHandler(e:MouseEvent):void {
-			TweenLite.to(this, 0.3, {glowFilter: {color: Style.BUTTON_GLOW, alpha: 1, blurX: 6, blurY: 6}});
+			TweenLite.to(this, 0.2, {glowFilter: {color: Style.BUTTON_GLOW, alpha: 1, blurX: 6, blurY: 6 , strength:2}});
 		}
 		
-		///////////////////////////////////
+		//////////////////////////////////////////////////////////////////////
 		// public methods 公開方法
-		///////////////////////////////////
+		//////////////////////////////////////////////////////////////////////
 		
 		override public function draw():void {
 			super.draw();
 			this.graphics.lineStyle(1, Style.BUTTON_LINE_STYLE);
 			matrix.createGradientBox(this.width, this.height, 90 / 180 * Math.PI, 0, 0);
 			this.graphics.beginGradientFill(fillType, Style.BUTTON_GRADIENT, alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio);
-			this.graphics.drawRoundRect(0, 0, this.width, this.height, ellipse, ellipse);
+			//讓drawRoundRect抗鋸齒的最簡單的方法：讓x和y坐標為小數：
+			this.graphics.drawRoundRect(0.5, 0.5, this.width, this.height, ellipse, ellipse);
 			
 			_label.text = _labelText;
 			_label.draw();
+			
 			if (_label.width > _width - 4) {
 				_label.width = _width - 4;
 			}
@@ -93,9 +92,9 @@ package com.soar.ui {
 			_label.move(_width / 2 - _label.width / 2, _height / 2 - _label.height / 2);
 		}
 		
-		///////////////////////////////////
+		//////////////////////////////////////////////////////////////////////
 		// getter / setters
-		///////////////////////////////////
+		//////////////////////////////////////////////////////////////////////
 		
 		/**
 		 * Sets / gets the label text shown on this Pushbutton.

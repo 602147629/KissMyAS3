@@ -20,11 +20,11 @@ package com.soar.events{
 	 */
 	
 	public class ClassLoader extends EventDispatcher {
-		public static var CLASS_LOADED:String = "classLoaded";
-		public static var LOAD_ERROR:String = "loadError";
-		public static var PROGRESS:String = "progress";
-		public static var BytesLoaded:Number = 0;
-		public static var BytesTotal:Number = 0;
+		public const CLASS_LOADED:String = "classLoaded";
+		public const LOAD_ERROR:String = "loadError";
+		public const PROGRESS:String = "progress";
+		public var BytesLoaded:Number = 0;
+		public var BytesTotal:Number = 0;
 		private var loader:Loader;
 		private var swfLib:String;
 		private var request:URLRequest;
@@ -67,15 +67,15 @@ package com.soar.events{
 		}
 		
 		private function completeHandler(e:Event):void {
-			dispatchEvent(new GeneralEvent(ClassLoader.CLASS_LOADED));
+			dispatchEvent(new GeneralEvent(CLASS_LOADED));
 		}
 		
 		private function ioErrorHandler(e:Event):void {
-			dispatchEvent(new GeneralEvent(ClassLoader.LOAD_ERROR));
+			dispatchEvent(new GeneralEvent(LOAD_ERROR));
 		}
 		
 		private function securityErrorHandler(e:Event):void {
-			dispatchEvent(new GeneralEvent(ClassLoader.LOAD_ERROR));
+			dispatchEvent(new GeneralEvent(LOAD_ERROR));
 		}
 		
 		public function distory():void {
