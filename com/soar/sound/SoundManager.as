@@ -1,11 +1,15 @@
-package com.soar.xyz {
+package com.soar.sound {
 	import flash.events.Event;
 	import flash.media.Sound;
 	
 	/**
 	 * ...
-	 * @author Adam
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @author	：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class SoundManager {
 		private var backgroundSound:SoundSprite;
 		private var soundMap:Vector.<SoundSprite> = new Vector.<SoundSprite>();

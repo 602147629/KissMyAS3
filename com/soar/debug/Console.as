@@ -1,4 +1,4 @@
-package com.soar.manager {
+package com.soar.debug {
 	import flash.events.StatusEvent;
 	import flash.net.LocalConnection;
 	
