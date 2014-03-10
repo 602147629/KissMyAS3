@@ -37,7 +37,7 @@
 package com.soar.utils{
 	import flash.utils.ByteArray;
 	
-	public class Base64 {
+	public class Base64_2 {
 		private static const _encodeChars:Vector.<int> = InitEncoreChar();
 		private static const _decodeChars:Vector.<int> = InitDecodeChar();
 		

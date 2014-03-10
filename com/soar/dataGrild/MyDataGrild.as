@@ -1,18 +1,14 @@
-package com.soar.dataGrild{
+package Basic{
 	import fl.controls.DataGrid;
 	import fl.controls.dataGridClasses.DataGridColumn;
 	import fl.data.DataProvider;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
-	
 	/**
 	 * ...
-	 * @copy   ：Copyright (c) 2008, SOAR Digital Incorporated. All rights reserved.
-	 * @author ：g8sam
-	 * @since   ：2012/6/29 下午 03:33
-	 * @version：1.0.12
+	 * @author g8sam
+	 * @date： 2012/6/29 下午 03:33
 	 */
-	
 	public class MyDataGrild{
 		private var dataGrild:DataGrid;
 		private var dp:DataProvider;

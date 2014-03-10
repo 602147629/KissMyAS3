@@ -1,4 +1,5 @@
 package com.soar.tip {
+	import com.soar.events.GeneralEvent;
 	import com.soar.ui.PushButton;
 	import com.soar.ui.Style;
 	import flash.display.Bitmap;
@@ -15,7 +16,7 @@ package com.soar.tip {
 	import flash.text.TextFormat;
 	
 	/**
-	 * ...
+	 * 警告視窗
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
 	 * @author	：g8sam « Just do it ™ »
 	 * @since		：2013/5/6 下午 02:56
@@ -33,9 +34,6 @@ package com.soar.tip {
 		
 		private var msgBox:Sprite;
 		
-		public function Alert( ) {
-		}
-		
 		//beginGradientFill
 		private var fillType:String = GradientType.LINEAR;
 		private var alphas:Array = [1, 1 , 1 ,1 ,  1];
@@ -47,101 +45,191 @@ package com.soar.tip {
 		private var focalPointRatio:Number = 1;
 		private var ellipse:int = 10;
 		
-		private var messageTitleStr:String = "Message";
-		private var mesage_tf:TextField = new TextField();
+		/** 	視窗標題	**/
+		private var messageTitleStr:String = "";
+		private var mesage_tf:TextField ;
 		private var message_fmt:TextFormat;
 		
-		private function message():void {
-			msgBox = new Sprite();
-			msgBox.graphics.lineStyle(1, 0x333333);
-			matrix.createGradientBox(420, 180, 90 / 180 * Math.PI, 0, 0);
-			msgBox.graphics.beginGradientFill( fillType , colors , alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio);
+		/** 	彈出視窗大小	**/
+		private var _msgW:int;
+		private var _msgH:int;
+		
+		/** 	場景大小 	**/
+		private var _alertWidth:int;
+		private var _alertHeight:int;
+		
+		/** 是否派發事件	**/
+		private var _isEvent:Boolean = false;
+		
+		private static var _alert:Alert;
+		
+		public function Alert( ) {
+		}
+		
+		public static function getInstance():Alert {
+			if ( _alert == null) _alert = new Alert();
+			return _alert;
+		}
+		
+		//////////////////////////////////////////////////////////////////////////////////////////////////////
+		//	Public Method
+		//////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		/**
+		 * 設定場景大小
+		 * @param	width	:	int
+		 * @param	height	:	int
+		 */
+		public function setAlertSize( width:int , height:int ):void {
+			this._alertWidth = width;
+			this._alertHeight = height;
+		}
+		
+		/**
+		 * 設定彈出窗大小
+		 * @param	width	:	int
+		 * @param	height	:	int
+		 */
+		public function setMsgSize(width:int , height:int ):void {
+			this._msgW = width;
+			this._msgH = height;
+		}
+		
+		/**
+		 * 設定視窗標題
+		 * @param	str
+		 */
+		public function setMsgTitle( str:String ):void {
+			this.messageTitleStr = str;
+		}
+		
+		/**
+		 * 顯示警告視窗
+		 * @param	_parent	上層容器
+		 * @param	_msg		顯示文字內容
+		 * @param	isEvent		事件開啟並開起按鈕
+		 * @param	_width		警告窗體寬
+		 * @param	_height	警告窗體高
+		 */
+		public function show( _parent:DisplayObjectContainer = null  , _msg:String = null , isEvent:Boolean = false , _width:int = 0 , _height:int = 0 ):void {
+			this.obj = _parent;
+			this.obj.addChild(this);
+			this.msg = _msg;
+			this._isEvent = isEvent;
+			
+			if (_width != 0  && _height != 0) {
+				this._msgW = _width;
+				this._msgH = _height;
+			} 
+			
+			this.message( _msgW , _msgH );
+			
+			this.bmpD = new BitmapData( _alertWidth , _alertHeight , false , 0x000000);
+			this.bmp = new Bitmap(this.bmpD);
+			this.bmp.alpha = 0.6;
+			this.addChild(this.bmp);
+			
+			this.msg_Tf = new TextField();
+			this.msg_fmt = new TextFormat("微軟正黑體", 20, 0xcc0000, true, null, null, null, null, "center");
+			this.msg_fmt.letterSpacing = 2;
+			this.msg_Tf.defaultTextFormat = msg_fmt;
+			this.msg_Tf.selectable = false;
+			this.msg_Tf.mouseEnabled = false;
+			this.msg_Tf.autoSize = TextFieldAutoSize.CENTER;
+			this.msg_Tf.antiAliasType = AntiAliasType.ADVANCED;
+			this.msg_Tf.text = this.msg;
+			this.msg_Tf.width = 400;
+			this.addChild(this.msg_Tf);
+			this.msg_Tf.x = (_alertWidth - this.msg_Tf.width) * 0.5;
+			this.msg_Tf.y = (_alertHeight - this.msg_Tf.height) * 0.5-10;
+			
+			if (this._isEvent) {
+				this.enterBtn = new PushButton(this  , 70 , 26 , "确定" , 0, 0 , this.closeShowHandler );
+				this.addChild(this.enterBtn);
+				this.enterBtn.x = (_alertWidth - this.enterBtn.width) * 0.5;
+				this.enterBtn.y = (_alertHeight - this.enterBtn.height) * 0.5 +46;
+				this.enterBtn.addEventListener( MouseEvent.CLICK , this.closeShowHandler);
+			}
+			
+		}
+		
+		
+		//////////////////////////////////////////////////////////////////////////////////////////////////////
+		//	Private Method
+		//////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		private function message( _width:int , _height:int ):void {
+			this.msgBox = new Sprite();
+			this.msgBox.graphics.lineStyle(1, 0x333333);
+			this.matrix.createGradientBox(_width, _height, 90 / 180 * Math.PI, 0, 0);
+			this.msgBox.graphics.beginGradientFill( fillType , colors , alphas, ratios, matrix, spreadMethod, interpolationMethod, focalPointRatio);
 			//讓drawRoundRect抗鋸齒的最簡單的方法：讓x和y坐標為小數：
-			msgBox.graphics.drawRoundRect(0.5, 0.5, 420, 180, ellipse, ellipse);
-			msgBox.graphics.moveTo(0 , 30);
-			msgBox.graphics.lineTo(420 , 30);
-			addChild(msgBox);
-			msgBox.x = (990 - 420) * 0.5;
-			msgBox.y = (600 - 180) * 0.5;
+			this.msgBox.graphics.drawRoundRect(0.5, 0.5, _width, _height, ellipse, ellipse);
+			this.msgBox.graphics.moveTo(0 , 30);
+			this.msgBox.graphics.lineTo(_width , 30);
+			this.addChild(msgBox);
+			this.msgBox.x = (_alertWidth - _width) * 0.5;
+			this.msgBox.y = (_alertHeight - _height) * 0.5;
 			//msgBox.alpha = 0.8;
 			
 			var shadow:DropShadowFilter = new DropShadowFilter();
 			shadow.distance = 1;
 			shadow.angle = 16;
-			msgBox.filters = [shadow];
+			this.msgBox.filters = [shadow];
 			
-			message_fmt = new TextFormat("微軟正黑體", 20, 0xdddddd, true, null, null, null, null, "center");
-			message_fmt.letterSpacing = 2;
-			mesage_tf.defaultTextFormat = message_fmt;
-			mesage_tf.selectable = false;
-			mesage_tf.mouseEnabled = false;
-			mesage_tf.autoSize = TextFieldAutoSize.CENTER;
-			mesage_tf.antiAliasType = AntiAliasType.ADVANCED;
-			mesage_tf.text = messageTitleStr;
-			mesage_tf.x = (990-mesage_tf.width)*0.5;
-			mesage_tf.y = msgBox.y;
-			mesage_tf.filters = [shadow];
-			addChild(mesage_tf);
+			this.mesage_tf = new TextField();
+			this.message_fmt = new TextFormat("微軟正黑體", 20, 0xdddddd, true, null, null, null, null, "center");
+			this.message_fmt.letterSpacing = 2;
+			this.mesage_tf.defaultTextFormat = this.message_fmt;
+			this.mesage_tf.selectable = false;
+			this.mesage_tf.mouseEnabled = false;
+			this.mesage_tf.autoSize = TextFieldAutoSize.CENTER;
+			this.mesage_tf.antiAliasType = AntiAliasType.ADVANCED;
 			
-		}
-		public function show( _parent:DisplayObjectContainer = null  , _msg:String = null):void {
-			this.obj = _parent;
-			this.obj.addChild(this);
-			this.msg = _msg;
-			
-			message();
-			
-			bmpD = new BitmapData( obj.width , obj.height , false , 0x000000);
-			bmp = new Bitmap(bmpD);
-			bmp.alpha = 0.6;
-			this.addChild(bmp);
-			
-			msg_Tf = new TextField();
-			msg_fmt = new TextFormat("微軟正黑體", 20, 0xcc0000, true, null, null, null, null, "center");
-			msg_fmt.letterSpacing = 2;
-			msg_Tf.defaultTextFormat = msg_fmt;
-			msg_Tf.selectable = false;
-			msg_Tf.mouseEnabled = false;
-			msg_Tf.autoSize = TextFieldAutoSize.CENTER;
-			msg_Tf.antiAliasType = AntiAliasType.ADVANCED;
-			msg_Tf.text = msg;
-			msg_Tf.width = 400;
-			addChild(msg_Tf);
-			msg_Tf.x = (990 - msg_Tf.width) * 0.5;
-			msg_Tf.y = (600 - msg_Tf.height) * 0.5-10;
-			
-			enterBtn = new PushButton(this  , 70 , 26 , "確定" , 0, 0 , closeShowHandler );
-			addChild(enterBtn);
-			enterBtn.x = (990 - enterBtn.width) * 0.5;
-			enterBtn.y = (600 - enterBtn.height) * 0.5 +46;
+			if (this.messageTitleStr != "") {
+				this.mesage_tf.text = this.messageTitleStr;
+				this.mesage_tf.x = (_alertWidth - this.mesage_tf.width)*0.5;
+				this.mesage_tf.y = this.msgBox.y;
+				this.mesage_tf.filters = [shadow];
+				this.addChild(this.mesage_tf);
+			}
 		}
 		
+		/**	自己銷毀 **/
 		private function closeShowHandler(e:MouseEvent ):void {
-			removeEventListener( MouseEvent.CLICK , closeShowHandler);
+			if( this._isEvent ) {
+				this.dispatchEvent( new GeneralEvent("ALERT_ENTER_EVENT" ));
+			}
 			
-			removeChild(enterBtn);
+			this.kill();
+		}
+		
+		private function kill():void {
+			if (this.enterBtn) {
+				this.enterBtn.removeEventListener( MouseEvent.CLICK , this.closeShowHandler);
+				this.removeChild(this.enterBtn);
+				this.enterBtn = null;
+			}
 			
-			enterBtn = null;
+			this.removeChild(this.msg_Tf);
+			this.bmpD.dispose();
+			this.bmpD = null;
+			this.removeChild(this.bmp);
+			this.removeChild(this.mesage_tf);
+			this.removeChild(this.msgBox);
 			
-			removeChild(msg_Tf);
-			msg_Tf = null;
-			msg_fmt = null;
-			msg = null;
+			this.msg_Tf = null;
+			this.msg_fmt = null;
+			this.msg = null;
 			
-			bmpD.dispose();
-			bmpD = null;
+			this.bmp = null;
+			this.mesage_tf = null;
+			this.message_fmt = null;
+			this.msgBox.filters = null;
+			this.msgBox = null;
 			
-			removeChild(bmp);
-			bmp = null;
-			
+			this.obj.removeChild(this);
 			this.obj = null;
-			
-			removeChild(mesage_tf);
-			mesage_tf = null;
-			message_fmt = null;
-			msgBox.filters = null;
-			removeChild(msgBox);
-			msgBox = null;
 		}
 		
 	}

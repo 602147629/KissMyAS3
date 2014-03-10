@@ -9,6 +9,7 @@ package com.soar.math{
 	 */
 	
 	public class MathCalculate {
+		public static var GoldenRatio:Number = 1.6180339887498948482045868343656381177203091798057628621354486227052604628189024497072072041893911374;
 		
 		public function MathCalculate():void {
 			//EntryPoint...

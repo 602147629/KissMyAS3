@@ -142,13 +142,21 @@ package com.soar.debug.Stats {
 		
 		private var ticks:int = 0;
 		private var lastUpdate:uint = 0;
-		private var cpu;
+		private var cpu:int;
 		private var cpuLog = new Array();
-		private var cpuMax = 0;
-		private var cpuMin = 0;
+		private var cpuMax:int = 0;
+		private var cpuMin:int = 0;
 		private var memoryLog = new Array();
-		private var memoryMax = 0; 
-		private var memoryMin = 0;
+		private var memoryMax:int = 0; 
+		private var memoryMin:int = 0;
+		private var memoryTF:TextField = new TextField();
+		private var memoryMaxTF:TextField = new TextField();
+		private var memoryMinTF:TextField = new TextField();
+		private var cpuTF:TextField = new TextField();
+		private var cpuMinTF:TextField = new TextField();
+		private var cpuMaxTF:TextField = new TextField();
+		private var frameRate:int = 24;
+		
 		
 		// 使用的記憶體和CPU％
 		private function getStats(event) {
@@ -161,7 +169,7 @@ package com.soar.debug.Stats {
 				lastUpdate = now;
 			}
 			
-			cpu:int = 100 - ticks / frameRate * 100;
+			cpu = 100 - ticks / frameRate * 100;
 			cpuLog.push(cpu);
 			ticks = 0;
 			cpuTF.text = cpu.toFixed(1) + '%';

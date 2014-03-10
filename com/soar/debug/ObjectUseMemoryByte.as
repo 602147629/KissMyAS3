@@ -5,6 +5,7 @@ package {
 	import flash.display.SimpleButton;
 	import flash.display.Sprite;
 	import flash.sampler.getSize;
+	import flash.text.TextField;
 	
 	/**
 	 * ...
@@ -58,5 +59,12 @@ package {
 			trace("TextField 字節 :" + size); //輸出：1024
 			
 		}
+		
+		//使用的内存
+		public function getTotalMemory():String {
+			var mem:String = Number( System.totalMemory / 1024 / 1024 ).toFixed( 2 ) + "Mb";
+			trace(mem);
+		}
+		
 	}
 }

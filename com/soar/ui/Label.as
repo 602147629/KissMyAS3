@@ -15,7 +15,7 @@ package com.soar.ui {
 	[Event(name="resize", type="flash.events.Event")]
 	public class Label extends Component {
 		protected var _autoSize:Boolean = true;
-		protected var _text:String = "";
+		protected var _text:String;
 		protected var _tf:TextField;
 		protected var t_tf:TextField;
 		

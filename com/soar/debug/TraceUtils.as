@@ -1,4 +1,4 @@
-package {
+package com.soar.debug{
 	import flash.display.DisplayObject;
 	
 	/**
@@ -17,13 +17,15 @@ package {
 		
 		/**
 		 * trace 出顯示對象的路徑
+		 * @param	t : DisplayObject
+		 * @return	Path : String
 		 */
 		public static function getDisplayObjPath(t:DisplayObject):String {
 			var a:String = getDOPath(t);
 			return a;
 		}
 		
-		private static function getDOPath(t:DisplayObject, name:String = "") :String{
+		private static function getDOPath(t:DisplayObject, name:String = "") :String {
 			if (name == "") {
 				name = t.name;
 			} else {
@@ -35,6 +37,12 @@ package {
 			} else {
 				return name;
 			}
+		}
+		
+		public static function SuperTrace(... args):void {
+			var e:Error = new Error();
+			var caller:String = "[" + e.getStackTrace().match(/[\w\/]*\(\)/g)[1] + "]";
+			trace(caller, args);
 		}
 	}
 }

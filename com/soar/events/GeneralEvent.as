@@ -10,21 +10,17 @@
 	 */
 		
 	public class GeneralEvent extends Event{
-		public static const BTN_DOWN:String = "btnDown";
-		public static const BTN_OVER:String = "btnOver";
-		public static const BTN_OUT:String = "btnOut";
-		
-		public var eventName:String;
 		public var eventData:Object;
+		public var eventName:String;
 
-		public function GeneralEvent( type:String, eventName:String = null, eventData:Object = null ):void{
-			super(type, true);
-			this.eventName = eventName;
+		public function GeneralEvent( type:String, eventName:String = null , eventData:Object = null , isBubble:Boolean = false ):void{
+			super(type, isBubble);
 			this.eventData = eventData;
+			this.eventName = eventName;
 		}
 
 		public override function clone():Event{
-			return new GeneralEvent( this.type, eventName, eventData );
+			return new GeneralEvent( this.type, eventName , eventData );
 		}
 		
 		public function get eventInfo():Object {

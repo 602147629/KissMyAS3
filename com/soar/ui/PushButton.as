@@ -1,7 +1,9 @@
 package com.soar.ui {
+	import com.greensock.plugins.ColorTransformPlugin;
 	import com.greensock.plugins.GlowFilterPlugin;
 	import com.greensock.plugins.TweenPlugin;
 	import com.greensock.TweenLite;
+	import com.soar.style.ColorTransform_IDE;
 	import flash.display.DisplayObjectContainer;
 	import flash.display.GradientType;
 	import flash.display.Sprite;
@@ -36,13 +38,33 @@ package com.soar.ui {
 		protected var _selected:Boolean = false;
 		protected var _toggle:Boolean = false;
 		
-		public function PushButton(parent:DisplayObjectContainer = null, width:Number = 0, height:Number = 0, label:String = "", xpos:Number = 0, ypos:Number = 0, defaultHandler:Function = null):void {
+		/**
+		 *	jfidjfidosf
+		 * @param	parent					:DisplayObjectContainer
+		 * @param	width					:Number
+		 * @param	height					:Number
+		 * @param	label					:String
+		 * @param	xpos						:Number
+		 * @param	ypos						:Number
+		 * @param	defaultHandler	:Function
+		 */
+		public function PushButton(	parent:DisplayObjectContainer = null, 
+													width:Number = 0, 
+													height:Number = 0, 
+													label:String = "", 
+													xpos:Number = 0, 
+													ypos:Number = 0, 
+													defaultHandler:Function = null
+		):void {
+			
 			TweenPlugin.activate([GlowFilterPlugin]);
+			TweenPlugin.activate([ColorTransformPlugin]);
+			
 			super(parent, xpos, ypos);
 			setSize(width, height);
 			
 			if (defaultHandler != null) {
-				addEventListener(MouseEvent.CLICK, defaultHandler);
+				this.addEventListener(MouseEvent.CLICK, defaultHandler);
 			}
 			
 			this.label = label;
@@ -58,21 +80,29 @@ package com.soar.ui {
 			_label = new Label();
 			addChild(_label);
 			
-			addEventListener(MouseEvent.MOUSE_OVER, mouseOverHandler);
-			addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
+			this.addEventListener(MouseEvent.MOUSE_OVER, mouseOverHandler);
 		}
 		
 		private function mouseOutHandler(e:MouseEvent):void {
-			TweenLite.to(this, 0.2, {glowFilter: {color: null, alpha: 0, blurX: 0, blurY: 0 , strength:0}});
+			this.removeEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
+			this.addEventListener(MouseEvent.MOUSE_OVER, mouseOverHandler);
+			
+			TweenLite.to(this, 0.3, { colorTransform:{tint:null, tintAmount:0.0} , glowFilter: {color: null, alpha: 0, blurX: 0, blurY: 0, strength: 0}});
 		}
 		
 		private function mouseOverHandler(e:MouseEvent):void {
-			TweenLite.to(this, 0.2, {glowFilter: {color: Style.BUTTON_GLOW, alpha: 1, blurX: 6, blurY: 6 , strength:2}});
+			this.removeEventListener(MouseEvent.MOUSE_OVER, mouseOutHandler);
+			this.addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
+			
+			this.transform.colorTransform = ColorTransform_IDE.Luminance(100);
+			
+			TweenLite.to(this, 0.16, { colorTransform:{tint:0xFFFFFF, tintAmount:0.2} , glowFilter: { color: Style.BUTTON_GLOW, alpha: 1, blurX: 5, blurY: 5, strength: 1.6 }} );
+			
 		}
 		
-		//////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// public methods 公開方法
-		//////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 		override public function draw():void {
 			super.draw();
@@ -92,9 +122,9 @@ package com.soar.ui {
 			_label.move(_width / 2 - _label.width / 2, _height / 2 - _label.height / 2);
 		}
 		
-		//////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// getter / setters
-		//////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 		/**
 		 * Sets / gets the label text shown on this Pushbutton.
