@@ -1,4 +1,4 @@
-package com.soar.utils.codeSnippets {
+package soar.tutorials.codeSnippets {
 	
 	/**
 	 * ...

@@ -1,4 +1,4 @@
-package com.soar.utils.codeSnippets {
+package soar.tutorials.codeSnippets {
 	import com.greensock.easing.Back;
 	import com.greensock.plugins.ColorTransformPlugin;
 	import com.greensock.plugins.GlowFilterPlugin;

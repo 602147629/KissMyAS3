@@ -14,7 +14,6 @@ package com.soar.sound {
 		private var backgroundSound:SoundSprite;
 		private var soundMap:Vector.<SoundSprite> = new Vector.<SoundSprite>();
 		
-		/* 建構式 */
 		public function SoundManager() {
 		}
 		
