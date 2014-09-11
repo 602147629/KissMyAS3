@@ -1,4 +1,4 @@
-﻿package com.soar.events{
+﻿package com.soar.events {
 	import flash.events.Event;
 	
 	/**

@@ -1,5 +1,5 @@
 package {
-	import com.soar.ui.PushButton;
+	import com.soar.ui.component.PushButton;
 	import flash.display.Sprite;
 	import flash.text.TextField;
 

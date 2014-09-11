@@ -1,18 +1,19 @@
 package com.soar.tip {
+	import com.greensock.easing.Back;
+	import com.greensock.TweenLite;
+	import flash.display.DisplayObject;
 	import flash.display.GradientType;
-	import flash.display.SpreadMethod;
 	import flash.display.Sprite;
 	import flash.filters.BitmapFilterQuality;
 	import flash.filters.DropShadowFilter;
 	import flash.filters.GlowFilter;
 	import flash.geom.Matrix;
-	import flash.geom.Rectangle;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFormat;
 	
 	/**
-	 * ...
+	 * 對話式提示框
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
 	 * @author	：g8sam « Just do it ™ »
 	 * @since		：2013/5/17 下午 05:22
@@ -20,123 +21,113 @@ package com.soar.tip {
 	 */
 	
 	 /**
-	  * @example	EXAMPLE:
-	  * var $TipPop:TipPop = new TipPop();
-	  * addChild($TipPop);
-	  * $TipPop.x = 500;
-	  * $TipPop.y = 60;
-	  * $TipPop.show( "User Name");
+	  * @EXAMPLE:
+		  * TipPop.getInstance().show( viewNG , "Into2" , 200 , 50);
+		  * TipPop.getInstance().disable();
 	  */
 	public class TipPop extends Sprite {
-		private var tipMsg:TextField;
-		private var msg_fmt:TextFormat;
+		private var _dispaly:DisplayObject;
 		
-		private var alphas:Array = [1, 1 , 1 ,1 ];
-		private var ratios:Array = [ 0, 125 , 125,255];
-		private var colors:Array = [0x333333 , 0x000000 , 0x000000 , 0x000000];
-		private var matrix:Matrix = new Matrix();
-		private var spreadMethod:String = "reflect";
-		private var interpolationMethod:String = "LINEAR_RGB";
-		private var focalPointRatio:Number = 1;
+		/** 提示文字 */
+		private var _tipMsg:TextField = new TextField();
+		private var _msg_fmt:TextFormat;
 		
-		private var cornerRadius:int = 8;//4角半徑
-		private var arrowOffSet:int = 40;//箭頭
-		private var arrowSize:int = 4;
-		private var w:Number;
-		private var h:Number;
+		private var _alphas:Array = [1, 1 , 1 ,1 ];
+		private var _ratios:Array = [ 0, 125 , 125,255];
+		private var _colors:Array = [0x333333 , 0x000000 , 0x000000 , 0x000000];
+		private var _matrix:Matrix = new Matrix();
+		private var _spreadMethod:String = "reflect";
+		private var _interpolationMethod:String = "LINEAR_RGB";
+		private var _focalPointRatio:Number = 1;
+		private var _dropFilter:DropShadowFilter = new DropShadowFilter(1 , 90 , 0x000000 , 1 , 2 , 2 , 1 , BitmapFilterQuality.HIGH);
+		private var _glowFilter:GlowFilter = new GlowFilter(0x000000 , 0.2 , 5 , 5 , 1 , BitmapFilterQuality.HIGH);
 		
-		private var bgBlock:Sprite = new Sprite();
+		/** 4角半徑 */
+		private var _cornerRadius:int = 8;
+		/** 箭頭 */
+		private var _arrowOffSet:int = 40;
+		private var _arrowSize:int = 4;
+		private var _w:Number;
+		private var _h:Number;
 		
-		public function TipPop():void {
-			this.mouseChildren = false;
-			this.mouseEnabled = false;
-			this.tabChildren = false;
-			this.tabEnabled = false;
+		private var _bgBlock:Sprite = new Sprite();
+		
+		private static var instance:TipPop;
+		public static function getInstance():TipPop {return (instance ||= new TipPop);}
+		public function TipPop() { if (instance) { throw new Error("Use TipPop.getInstance()"); }}
+		
+		public function show( display:DisplayObject , msg:String , x:Number , y:Number):void {
+			this._dispaly = display;
+			this.settingTxt(msg);
+			this.drawBG();
+			this.addChild(this._tipMsg);
+			
+			this.x = x;
+			this.y = y + this._tipMsg.height;
+			this.alpha = 0;
+			this._dispaly.stage.addChild(this);
+			
+			TweenLite.to(this , 0.4 ,{y:y , alpha:1 , ease:Back.easeInOut});
 		}
 		
-		public function show( msg:String):void {
-			settingTxt(msg);
-			drawBG();
-			addChild(tipMsg);
+		public function disable():void {
+			this._dispaly.stage.removeChild(this);
+			
+			this.removeChild(this._tipMsg);
+			this._tipMsg.text = "";
+			
+			this._bgBlock.graphics.clear();
+			this._bgBlock.filters = [];
+			this.removeChild(this._bgBlock);
 		}
 		
 		private function settingTxt(msg:String):void {
-			tipMsg = new TextField();
-			msg_fmt = new TextFormat("Arial" , 12 , 0xFFFFFF , true , null , null , null , null , TextFieldAutoSize.CENTER);
-			tipMsg.defaultTextFormat = msg_fmt;
-			tipMsg.text = msg;
-			tipMsg.selectable = false;
-			tipMsg.mouseEnabled = false;
-			tipMsg.height = 24;
-			tipMsg.y = (tipMsg.height - tipMsg.textHeight)*0.4;
+			this._msg_fmt = new TextFormat("Arial" , 12 , 0xFFFFFF , true , null , null , null , null , TextFieldAutoSize.CENTER);
+			this._tipMsg.defaultTextFormat = this._msg_fmt;
+			this._tipMsg.text = msg;
+			this._tipMsg.selectable = false;
+			this._tipMsg.mouseEnabled = false;
+			this._tipMsg.height = 24;
+			this._tipMsg.y = (this._tipMsg.height - this._tipMsg.textHeight)*0.4;
 			
-			w = tipMsg.width; 
-			h = tipMsg.height;
-			arrowOffSet = w * 0.5;
+			this._w = this._tipMsg.width; 
+			this._h = this._tipMsg.height;
+			this._arrowOffSet = this._w * 0.5;
 		}
 		
 		private function drawBG():void {
-			bgBlock.graphics.clear();
+			this._bgBlock.graphics.clear();
 			var xp:Number = 0.5;
 			var yp:Number = 0.5;
 			
 			var fillType:String = GradientType.LINEAR;
 			var radians:Number = 90 * Math.PI / 180;
-			matrix.createGradientBox(w, h, radians, 0, 0);
+			this._matrix.createGradientBox(this._w, this._h, radians, 0, 0);
 			
+			this._bgBlock.graphics.lineStyle(1, 0x000000, 1);
+			this._bgBlock.graphics.beginGradientFill(fillType, this._colors, this._alphas, this._ratios, this._matrix, this._spreadMethod , this._interpolationMethod , this._focalPointRatio);
 			
-			bgBlock.graphics.lineStyle(1, 0x000000, 1);
-			bgBlock.graphics.beginGradientFill(fillType, colors, alphas, ratios, matrix, spreadMethod , interpolationMethod , focalPointRatio);
-			
-			bgBlock.graphics.moveTo(xp + cornerRadius, yp);
-			bgBlock.graphics.lineTo(xp + w - cornerRadius, yp);
-			bgBlock.graphics.curveTo(xp + w, yp, xp + w, yp + cornerRadius);
-			bgBlock.graphics.lineTo(xp + w, yp + h - cornerRadius);
-			bgBlock.graphics.curveTo(xp + w, yp + h, xp + w - cornerRadius, yp + h);
+			this._bgBlock.graphics.moveTo(xp + this._cornerRadius, yp);
+			this._bgBlock.graphics.lineTo(xp + this._w - this._cornerRadius, yp);
+			this._bgBlock.graphics.curveTo(xp + this._w, yp, xp + this._w, yp + this._cornerRadius);
+			this._bgBlock.graphics.lineTo(xp + this._w, yp + this._h - this._cornerRadius);
+			this._bgBlock.graphics.curveTo(xp + this._w, yp + this._h, xp + this._w - this._cornerRadius, yp + this._h);
 			
 			//hook
-			bgBlock.graphics.lineTo(xp + arrowOffSet + arrowSize, yp + h);
-			bgBlock.graphics.lineTo(xp + arrowOffSet, yp + h + arrowSize);
-			bgBlock.graphics.lineTo(xp + arrowOffSet - arrowSize, yp + h);
-			bgBlock.graphics.lineTo(xp + cornerRadius, yp + h);
+			this._bgBlock.graphics.lineTo(xp + this._arrowOffSet + this._arrowSize, yp + this._h);
+			this._bgBlock.graphics.lineTo(xp + this._arrowOffSet, yp + this._h + this._arrowSize);
+			this._bgBlock.graphics.lineTo(xp + this._arrowOffSet - this._arrowSize, yp + this._h);
+			this._bgBlock.graphics.lineTo(xp + this._cornerRadius, yp + this._h);
 			
-			bgBlock.graphics.curveTo(xp, yp + h, xp, yp + h - cornerRadius);
-			bgBlock.graphics.lineTo(xp, yp + cornerRadius);
-			bgBlock.graphics.curveTo(xp, yp, xp + cornerRadius, yp);
-			bgBlock.graphics.endFill();
-			addChild(bgBlock);
-			bgBlock.alpha = 0.9;
-			//bgGlow();
-			bgDropShadow();
+			this._bgBlock.graphics.curveTo(xp, yp + this._h, xp, yp + this._h - this._cornerRadius);
+			this._bgBlock.graphics.lineTo(xp, yp + this._cornerRadius);
+			this._bgBlock.graphics.curveTo(xp, yp, xp + this._cornerRadius, yp);
+			this._bgBlock.graphics.endFill();
+			this.addChild(this._bgBlock);
+			this._bgBlock.alpha = 0.9;
+			//Glow
+			//this._bgBlock.filters = [this._glowFilter];
+			this._bgBlock.filters = [this._dropFilter];
 		}
-		
-		private function bgDropShadow():void {
-			var bmpFilter:DropShadowFilter = new DropShadowFilter(1,90,0x000000,1,2,2,1,15);  
-			bgBlock.filters = [bmpFilter];
-		}
-		
-		private function bgGlow():void {
-			var color:Number = 0x000000;
-            var alpha:Number = 0.20;
-            var blurX:Number = 5;
-            var blurY:Number = 5;
-            var strength:Number = 1;
-            var inner:Boolean = false;
-            var knockout:Boolean = false;
-            var quality:Number = BitmapFilterQuality.HIGH;
-
-           var filter:GlowFilter = new GlowFilter(color,
-                                  alpha,
-                                  blurX,
-                                  blurY,
-                                  strength,
-                                  quality,
-                                  inner,
-                                  knockout);
-            var myFilters:Array = new Array();
-            myFilters.push(filter);
-            bgBlock.filters = myFilters;
-		}
-	
 	}
 }
