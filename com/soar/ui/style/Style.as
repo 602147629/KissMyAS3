@@ -1,9 +1,9 @@
-package com.soar.ui.style {
+package soar.ui.style {
 	
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOcom.soar.ui.style.Styleorated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/18 上午 11:19
 	 * @version	：1.0.12
 	 */

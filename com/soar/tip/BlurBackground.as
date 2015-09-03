@@ -29,7 +29,6 @@ package com.soar.tip{
 	import flash.display.DisplayObject;
 	import flash.display.DisplayObjectContainer;
 	import flash.display.Sprite;
-	import flash.display.Stage;
 	import flash.filters.BitmapFilterQuality;
 	import flash.filters.BlurFilter;
 	import flash.geom.Point;
@@ -38,12 +37,11 @@ package com.soar.tip{
 	/**
 	 * ...
 	 * @Example:
-		 * BlurBackground.getInstance().setting(this._viewNG , this._notEnough , 800 , 600);
-			BlurBackground.getInstance().enable();
-			BlurBackground.getInstance().disable();
-			
+	 * BlurBackground.getInstance().setting(this._viewNG , this._notEnough , 800 , 600);
+	 * BlurBackground.getInstance().enable();
+	 * BlurBackground.getInstance().disable();
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/8/29 下午 05:28
 	 * @version	：1.0.12
 	 */

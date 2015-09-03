@@ -3,18 +3,19 @@ package com.soar.ui.component {
 	import com.greensock.plugins.GlowFilterPlugin;
 	import com.greensock.plugins.TweenPlugin;
 	import com.greensock.TweenLite;
-	import com.soar.style.ColorTransform_IDE;
+	import com.soar.filter.KS_ColorTransform_IDE;
 	import com.soar.ui.style.Style;
 	import flash.display.DisplayObjectContainer;
 	import flash.display.GradientType;
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
+	import flash.geom.ColorTransform;
 	import flash.geom.Matrix;
 	
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 05:34
 	 * @version	：1.0.12
 	 */
@@ -40,14 +41,14 @@ package com.soar.ui.component {
 		protected var _toggle:Boolean = false;
 		
 		/**
-		 *	jfidjfidosf
+		 *	PushButton
 		 * @param	parent					:DisplayObjectContainer
 		 * @param	width					:Number
 		 * @param	height					:Number
-		 * @param	label					:String
+		 * @param	label						:String
 		 * @param	xpos						:Number
 		 * @param	ypos						:Number
-		 * @param	defaultHandler	:Function
+		 * @param	defaultHandler		:Function
 		 */
 		public function PushButton( parent:DisplayObjectContainer = null, 
 													width:Number = 0, 
@@ -94,7 +95,7 @@ package com.soar.ui.component {
 		private function mouseOverHandler(e:MouseEvent):void {
 			this.removeEventListener(MouseEvent.MOUSE_OVER, mouseOutHandler);
 			this.addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
-			this.transform.colorTransform = ColorTransform_IDE.Luminance(100);
+			this.transform.colorTransform = KS_ColorTransform_IDE.Luminance(100);
 			
 			TweenLite.to(this, 0.16, { colorTransform:{tint:0xFFFFFF, tintAmount:0.2} , glowFilter: { color: Style.BUTTON_GLOW, alpha: 1, blurX: 5, blurY: 5, strength: 1.6 }} );
 		}
@@ -119,6 +120,13 @@ package com.soar.ui.component {
 			}
 			this._label.draw();
 			this._label.move(this._width / 2 - this._label.width / 2, this._height / 2 - this._label.height / 2);
+		}
+		
+		private function toggleColorTransform(toggle:Boolean):void {
+			var ct:ColorTransform = new ColorTransform();
+			ct.redMultiplier = ct.greenMultiplier = ct.blueMultiplier = toggle ? 1 : 0.5;
+			this._label.transform.colorTransform = ct;
+			//this._label.filters = ColorTransform_IDE.getInstance().GRAY_FILTERS;
 		}
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -157,6 +165,10 @@ package com.soar.ui.component {
 		
 		public function get toggle():Boolean {
 			return this._toggle;
+		}
+		
+		public function set enable(value:Boolean):void {
+			this.toggleColorTransform(value);
 		}
 	}
 

@@ -6,7 +6,7 @@ package com.soar.events.mouse {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/5/4 上午 10:31
 	 * @version	：1.0.12
 	 */
@@ -16,8 +16,13 @@ package com.soar.events.mouse {
 		private var _display:Object;
 		
 		private static var instance:MouseGPS;
-		public static function getInstance():MouseGPS { return (instance ||= new MouseGPS); }
-		public function MouseGPS() {}
+		
+		public static function getInstance():MouseGPS {
+			return (instance ||= new MouseGPS);
+		}
+		
+		public function MouseGPS() {
+		}
 		
 		public function getGps(display:DisplayObject):void {
 			this._display = display;

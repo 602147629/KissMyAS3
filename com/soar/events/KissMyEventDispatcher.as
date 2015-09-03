@@ -3,7 +3,7 @@ package com.soar.events {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/5/14 下午 02:05
 	 * @version	：1.0.12
 	 */

@@ -5,8 +5,8 @@ package com.soar.events {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
-	 * @修改者	: Paladin
+	 * @author		：g8sam « Just do it ™ »
+	 * @修改者	 : Paladin
 	 * @since		：2013/7/30 上午 10:19
 	 * @version	：1.0.12
 	 */
@@ -19,16 +19,7 @@ package com.soar.events {
 		
 		private static var instance:EventFactory;
 		public static function getInstance():EventFactory { return (instance ||= new EventFactory); }
-		public function EventFactory():void {if (instance) {throw new Error("Use EventFactory.getInstance()");}}
-		
-		/** 取得丹利 */
-		/*
-		public static function getInstance():EventFactory {
-			if (instance == null)
-				instance = new EventFactory();
-			return instance as EventFactory;
-		}
-		*/
+		public function EventFactory():void {if (instance) {throw new Error(" Error : Use EventFactory.getInstance() !!! ");}}
 		
 		/**
 		 * 增加一個事件物件

@@ -1,14 +1,11 @@
 package com.soar.events.mouse {
 	import flash.display.BitmapData;
 	import flash.display.DisplayObject;
-	import flash.display.Shape;
 	import flash.display.Sprite;
-	import flash.display.Stage;
 	import flash.events.MouseEvent;
 	import flash.geom.Matrix;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	import flash.text.TextField;
 	import flash.utils.clearInterval;
 	import flash.utils.getTimer;
 	import flash.utils.setInterval;
@@ -16,7 +13,7 @@ package com.soar.events.mouse {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
@@ -135,10 +132,9 @@ package com.soar.events.mouse {
 	}
 }
 
+import flash.display.Sprite;
 import flash.geom.Point;
 import flash.text.TextField;
-import flash.display.Sprite;
-import flash.text.TextFormat;
 
 var pointX_tf:TextField;
 var pointY_tf:TextField;

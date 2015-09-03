@@ -1,11 +1,8 @@
 package com.soar.tip {
-	import flash.display.Bitmap;
 	import flash.display.BitmapData;
-	import flash.display.DisplayObjectContainer;
 	import flash.display.Sprite;
 	import flash.display.Stage;
 	import flash.filters.DropShadowFilter;
-	import flash.filters.GlowFilter;
 	import flash.system.Capabilities;
 	import flash.text.AntiAliasType;
 	import flash.text.TextField;
@@ -21,18 +18,17 @@ package com.soar.tip {
 	 */
 	
 	public class BuilderVer extends Sprite {
+		private var _stage:Stage;
+		
 		private var ver_tf:TextField;
 		private var playerVersion:TextField;
 		private var osVersion:TextField;
 		private var ver_fmt:TextFormat;
-		
-		private var _stage:Stage;
-		private static var _builderVer:BuilderVer;
 		private var StrokeDropFilter:DropShadowFilter;
 		
-		public function BuilderVer() :void{
-			init();
-		}
+		private static var instance:BuilderVer;
+		public static function getInstance():BuilderVer {return (instance ||= new BuilderVer);}
+		public function BuilderVer() { if (instance) { throw new Error("Use BuilderVer.getInstance()"); }}
 		
 		public function init():void {
 			this.mouseChildren = false;
@@ -54,11 +50,6 @@ package com.soar.tip {
 			
 			//描邊效果
 			StrokeDropFilter = new DropShadowFilter(1, 45, 0x000000, 1, 2, 2, 10, 1, false, false);
-		}
-		
-		public static function getInstance():BuilderVer {
-			if (_builderVer == null) _builderVer = new BuilderVer();
-			return _builderVer;
 		}
 		
 		/**

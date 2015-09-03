@@ -14,17 +14,15 @@ package com.soar.tip {
 	
 	/**
 	 * 對話式提示框
+	 * @EXAMPLE:
+	 * TipPop.getInstance().show( viewNG , "Into2" , 200 , 50);
+	 * TipPop.getInstance().disable();
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/5/17 下午 05:22
 	 * @version	：1.0.12
 	 */
 	
-	 /**
-	  * @EXAMPLE:
-		  * TipPop.getInstance().show( viewNG , "Into2" , 200 , 50);
-		  * TipPop.getInstance().disable();
-	  */
 	public class TipPop extends Sprite {
 		private var _dispaly:DisplayObject;
 		

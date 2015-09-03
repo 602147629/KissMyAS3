@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="ghostcat.fileformat.wav.WAVWriter"/>
+    <classEntry path="ghostcat.media.SoundUtil"/>
+    <classEntry path="ghostcat.operation.FileLoadOper"/>
+    <classEntry path="ghostcat.operation.FileSaveOper"/>
+    <classEntry path="ghostcat.parse.graphics.GraphicsTriangles"/>
+    <classEntry path="ghostcat.community.sort.Sort3DManager"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

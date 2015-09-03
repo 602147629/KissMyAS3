@@ -17,7 +17,7 @@ package com.soar.tip {
 	/**
 	 * 警告視窗
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/5/6 下午 02:56
 	 * @version	：1.0.12
 	 */

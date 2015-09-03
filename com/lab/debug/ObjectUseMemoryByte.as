@@ -5,6 +5,7 @@ package com.lab.debug {
 	import flash.display.SimpleButton;
 	import flash.display.Sprite;
 	import flash.sampler.getSize;
+	import flash.system.System;
 	import flash.text.TextField;
 	
 	/**

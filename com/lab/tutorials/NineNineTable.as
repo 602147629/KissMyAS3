@@ -5,6 +5,7 @@ package com.lab.tutorials {
 	 */
 	public class NineNineTable 
 	{
+		[SWF(width = 1024, height = 768, backgroundColor = 0xFEFEFE, frameRate = 24)]
 		
 		public function NineNineTable() 
 		{

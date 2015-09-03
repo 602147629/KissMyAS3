@@ -4,7 +4,7 @@ package com.soar.math {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/5/10 下午 01:36
 	 * @version	：1.0.12
 	 */
@@ -16,10 +16,10 @@ package com.soar.math {
 		private var k:Number = 0.6;
 		
 		public function PhysicalFormula_Example() {
-			(stage) ? init() :addEventListener(Event.ADDED_TO_STAGE, init);
+			(stage) ? init() : addEventListener(Event.ADDED_TO_STAGE, init);
 		}
 		
-		public function init( e:Event = null):void {
+		public function init(e:Event = null):void {
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			spball = new ball();
 			addChild(spball);
@@ -31,19 +31,15 @@ package com.soar.math {
 		public function Freefall(e:Event):void {
 			v += g;
 			spball.y += v;
-			trace( "spball : " + spball );
+			trace("spball : " + spball);
 			
 			if (spball.y > h) {
 				spball.y = h;
 				v *= -1 * k;
 			}
 		}
-		
 	}
-
 }
-
-
 
 class ball extends flash.display.Sprite {
 	function ball():void {

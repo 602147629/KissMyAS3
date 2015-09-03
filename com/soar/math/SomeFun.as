@@ -3,7 +3,7 @@ package com.soar.math {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/4/23 上午 10:53
 	 * @version	：1.0.12
 	 */

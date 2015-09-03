@@ -7,7 +7,7 @@ package com.soar.ui.component {
 	/**
 	 * ...
 	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/8/5 下午 02:39
 	 * @version	：1.0.12
 	 */
