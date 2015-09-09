@@ -12,17 +12,17 @@ package com.soar.tip {
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFormat;
 	
-	/**
-	 * 對話式提示框
+	 /**
+	 * ... 對話式提示框
 	 * @EXAMPLE:
 	 * TipPop.getInstance().show( viewNG , "Into2" , 200 , 50);
 	 * TipPop.getInstance().disable();
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/5/17 下午 05:22
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
-	
+	 
 	public class TipPop extends Sprite {
 		private var _dispaly:DisplayObject;
 		

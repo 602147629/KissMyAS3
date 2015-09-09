@@ -1,13 +1,14 @@
-package soar.utils.array {
+package com.soar.utils.array {
 	import flash.utils.getTimer;
 	
 	/**
 	 * ...
-	 * @copy		 : Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author		 : g8sam « Just do it ™ »
-	 * @since		 : 2014/12/20 上午 11:37
-	 * @version	 : 1.0.12
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class ArrayUtility {
 		
 		public function ArrayUtility() {

@@ -1,4 +1,4 @@
-package soar.filter {
+package com.soar.filter {
 	import flash.display.BitmapData;
 	import flash.filters.ColorMatrixFilter;
 	import flash.geom.ColorTransform;
@@ -6,13 +6,14 @@ package soar.filter {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/4/26 上午 10:07
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
 	
 	public class KS_ColorTransform_IDE {
+		
 		private static var instance:KS_ColorTransform_IDE;
 		
 		public static function getInstance():KS_ColorTransform_IDE {
@@ -133,27 +134,10 @@ package soar.filter {
 			}
 		}
 		
-		public function tra():ColorTransform {
-			var argb:Object = HextoARGB(0x9F9176FF);
-			var alpha:Number = argb.alpha;
-			var red:Number = argb.red;
-			var green:Number = argb.green;
-			var blue:Number = argb.blue;
-			trace("alpha", alpha, "red", red, "green", green, "blue", blue);
-			
-			var cols:ColorTransform = new ColorTransform(0, 0, 0, 0, red, green, blue, alpha);
-			trace(cols);
-			return cols;
-		
-		}
-		
-		public function HextoARGB(val:Number) :Object {
-			var col:Object = { };
-			col.red = (val >> 24) & 0xFF;
-			col.green = (val >> 16) & 0xFF;
-			col.blue = (val >> 8) & 0xFF;
-			col.alpha = val  & 0xFF;
-			return col;
+		private function toggleColorTransform(toggle:Boolean, mc:Object):void {
+			var ct:ColorTransform = new ColorTransform();
+			ct.redMultiplier = ct.greenMultiplier = ct.blueMultiplier = toggle ? 1 : 0.5;
+			mc.transform.colorTransform = ct;
 		}
 	
 	}

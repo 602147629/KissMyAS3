@@ -2,7 +2,7 @@
 
    The MIT License
 
-   Copyright (c) 2008 g8sam « Just do it ™ » ( http://g8sam.site90.net )
+   Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -33,8 +33,8 @@ package com.soar.utils.rightClick {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */

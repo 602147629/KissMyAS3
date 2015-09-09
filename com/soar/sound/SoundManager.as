@@ -4,8 +4,8 @@ package com.soar.sound {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
@@ -14,8 +14,7 @@ package com.soar.sound {
 		private var backgroundSound:SoundSprite;
 		private var soundMap:Vector.<SoundSprite> = new Vector.<SoundSprite>();
 		
-		public function SoundManager() {
-		}
+		public function SoundManager() {}
 		
 		/* 設定背景音樂 */
 		public function setBackground(_sound:Sound):void {

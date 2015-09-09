@@ -8,7 +8,7 @@ package com.soar.filter {
 	
 	/**
 	 * ...	背景模糊
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
@@ -16,8 +16,7 @@ package com.soar.filter {
 	
 	public class BlurEffect {
 		
-		public function BlurEffect():void {
-		}
+		public function BlurEffect():void {}
 		
 		/**
 		 * 顯示物件變模糊

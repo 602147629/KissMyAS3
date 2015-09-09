@@ -1,4 +1,4 @@
-package{
+package com.soar.utils.keyboard{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;

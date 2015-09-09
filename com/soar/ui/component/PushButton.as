@@ -14,9 +14,9 @@ package com.soar.ui.component {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/3/16 下午 05:34
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
 	
@@ -95,7 +95,7 @@ package com.soar.ui.component {
 		private function mouseOverHandler(e:MouseEvent):void {
 			this.removeEventListener(MouseEvent.MOUSE_OVER, mouseOutHandler);
 			this.addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
-			this.transform.colorTransform = KS_ColorTransform_IDE.Luminance(100);
+			this.transform.colorTransform = KS_ColorTransform_IDE.getInstance().Luminance(100);
 			
 			TweenLite.to(this, 0.16, { colorTransform:{tint:0xFFFFFF, tintAmount:0.2} , glowFilter: { color: Style.BUTTON_GLOW, alpha: 1, blurX: 5, blurY: 5, strength: 1.6 }} );
 		}
@@ -106,9 +106,11 @@ package com.soar.ui.component {
 		
 		override public function draw():void {
 			super.draw();
+			
 			this.graphics.lineStyle(1, Style.BUTTON_LINE_STYLE);
 			this._matrix.createGradientBox(this.width, this.height, 90 / 180 * Math.PI, 0, 0);
 			this.graphics.beginGradientFill(this._fillType, Style.BUTTON_GRADIENT, this._alphas, this._ratios, this._matrix, this._spreadMethod, this._interpolationMethod, this._focalPointRatio);
+			
 			//讓drawRoundRect抗鋸齒的最簡單的方法：讓x和y坐標為小數：
 			this.graphics.drawRoundRect(0.5, 0.5, this.width, this.height, this._ellipse, this._ellipse);
 			
@@ -118,6 +120,7 @@ package com.soar.ui.component {
 			if (this._label.width > this._width - 4) {
 				this._label.width = this._width - 4;
 			}
+			
 			this._label.draw();
 			this._label.move(this._width / 2 - this._label.width / 2, this._height / 2 - this._label.height / 2);
 		}

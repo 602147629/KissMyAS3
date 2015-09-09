@@ -1,14 +1,15 @@
-package soar.math {
+package com.soar.math {
 	import flash.display.MovieClip;
 	import flash.text.TextField;
 	
 	/**
 	 * ...
-	 * @copy		 : Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author		 : g8sam « Just do it ™ »
-	 * @since		 : 2014/12/20 上午 11:37
-	 * @version	 : 1.0.12
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class CalculateUtils {
 		private var _view:MovieClip;
 		//private var _btnMgr:ButtonMgr;
@@ -53,66 +54,58 @@ package soar.math {
 			var btnName:String = e.data[0];
 			
 			switch (btnName) {
-				case "0": 
-				case "1": 
-				case "2": 
-				case "3": 
-				case "4": 
-				case "5": 
-				case "6": 
-				case "7": 
-				case "8": 
-				case "9": 
-					this._txtPool.appendText(btnName);
-					this._tmpNumStr += btnName;
-					this._txtResult.text = this._tmpNumStr;
-					break;
-				case "Dot": 
-					if (this._txtPool.text.substr(-1).search(/[\d]/) > -1) {
-						var checkDot:String = this._txtPool.text;
-						checkDot += ".";
-						if (checkDot.search(/\.\d+\./) > -1) {
-							return;
-						}
-						
-						this._txtPool.appendText(".");
-						this._txtResult.appendText(".");
-						this._tmpNumStr += ".";
-					} else {
-						this._txtPool.text = this._txtPool.text.replace(/\b[\+\-\*\/]$/, ".");
+			case "0": case "1": case "2": case "3": case "4": case "5": case "6": case "7": case "8": case "9": 
+				this._txtPool.appendText(btnName);
+				this._tmpNumStr += btnName;
+				this._txtResult.text = this._tmpNumStr;
+				break;
+				
+			case "Dot": 
+				if (this._txtPool.text.substr(-1).search(/[\d]/) > -1) {
+					var checkDot:String = this._txtPool.text;
+					checkDot += ".";
+					if (checkDot.search(/\.\d+\./) > -1) {
+						return;
 					}
-					break;
-				case "Addition": 
-					checkOperation("+");
-					break;
-				case "Substraction": 
-					checkOperation("-");
-					break;
-				case "Multiplication": 
-					checkOperation("*");
-					break;
-				case "Division": 
-					checkOperation("/");
-					break;
-				case "Equal": 
-					this.exam(this._txtPool.text);
-					this._txtPool.text = "";
-					break;
-				case "Del": 
-					this._txtPool.text = this._txtPool.text.slice(0, this._txtPool.text.length - 1);
-					this._tmpNumStr = "";
 					
-					if (this._txtPool.text.length <= 0) {
-						this._txtResult.text = "0";
-					} else {
-						this.exam(this._txtPool.text);
-					}
-					break;
-				case "Clear": 
-					this._tmpNumStr = "";
-					this._txtPool.text = "";
+					this._txtPool.appendText(".");
+					this._txtResult.appendText(".");
+					this._tmpNumStr += ".";
+				} else {
+					this._txtPool.text = this._txtPool.text.replace(/\b[\+\-\*\/]$/, ".");
+				}
+				break;
+			case "Addition": 
+				checkOperation("+");
+				break;
+			case "Substraction": 
+				checkOperation("-");
+				break;
+			case "Multiplication": 
+				checkOperation("*");
+				break;
+			case "Division": 
+				checkOperation("/");
+				break;
+			case "Equal": 
+				this.exam(this._txtPool.text);
+				this._txtPool.text = "";
+				break;
+			case "Del": 
+				this._txtPool.text = this._txtPool.text.slice(0, this._txtPool.text.length - 1);
+				this._tmpNumStr = "";
+				
+				if (this._txtPool.text.length <= 0) {
 					this._txtResult.text = "0";
-					break;
+				} else {
+					this.exam(this._txtPool.text);
+				}
+				break;
+			case "Clear": 
+				this._tmpNumStr = "";
+				this._txtPool.text = "";
+				this._txtResult.text = "0";
+				break;
 			}
 		}
 		
@@ -207,7 +200,7 @@ package soar.math {
 			
 			var length:int;
 			/*curTotal *= 10000;
-			 tempTotal *= 10000;*/
+			   tempTotal *= 10000;*/
 			
 			if (symbol == "+") {
 				curTotal = String(Number(curTotal) + Number(tempTotal));

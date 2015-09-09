@@ -1,4 +1,4 @@
-package soar.ui.component {
+package com.soar.ui.component {
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
@@ -7,11 +7,12 @@ package soar.ui.component {
 	
 	/**
 	 * ... 按鈕基本款( 一張圖 )
-	 * @copy		 : Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author		 : g8sam « Just do it ™ »
-	 * @since		 : 2014/12/20 上午 11:37
-	 * @version	 : 1.0.12
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class ButtonLite extends Sprite {
 		private var _button:MovieClip;
 		private var _btnName:String;

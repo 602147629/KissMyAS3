@@ -4,11 +4,15 @@ package com.soar.dataGrild{
 	import fl.data.DataProvider;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
+	
 	/**
 	 * ...
-	 * @author g8sam
-	 * @date： 2012/6/29 下午 03:33
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class MyDataGrild{
 		private var dataGrild:DataGrid;
 		private var dp:DataProvider;

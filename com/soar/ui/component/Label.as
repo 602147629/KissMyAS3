@@ -8,12 +8,13 @@ package com.soar.ui.component {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/3/18 上午 11:44
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
-	[Event(name="resize", type="flash.events.Event")]
+	[Event(name = "resize", type = "flash.events.Event")]
+	
 	public class Label extends Component {
 		protected var _autoSize:Boolean = true;
 		protected var _text:String;
@@ -37,6 +38,7 @@ package com.soar.ui.component {
 			this._tf.embedFonts = Style.embedFonts;
 			this._tf.selectable = false;
 			this._tf.mouseEnabled = false;
+			Style.setStyle(Style.GALAXY);
 			this._tf.defaultTextFormat = new TextFormat(Style.fontName, Style.fontSize, Style.LABEL_TEXT);
 			this._tf.text = this._text;
 			this.addChild(this._tf);
@@ -49,7 +51,9 @@ package com.soar.ui.component {
 		
 		override public function draw():void {
 			super.draw();
+			
 			this._tf.text = this._text;
+			
 			if (this._autoSize) {
 				this._tf.autoSize = TextFieldAutoSize.LEFT;
 				this._width = this._tf.width;
@@ -58,12 +62,21 @@ package com.soar.ui.component {
 				this._tf.autoSize = TextFieldAutoSize.NONE;
 				this._tf.width = this._width;
 			}
+			
 			this._height = this._tf.height = 18;
 		}
 		
 		///////////////////////////////////
 		// getter/setters
 		///////////////////////////////////
+		
+		public function set autoSize(b:Boolean):void{
+			_autoSize = b;
+		}
+		
+		public function get autoSize():Boolean{
+			return _autoSize;
+		}
 		
 		public function set text(t:String):void {
 			this._text = t;

@@ -1,4 +1,5 @@
 package com.soar.tip {
+	
 	import com.soar.events.GeneralEvent;
 	import com.soar.ui.component.PushButton;
 	import flash.display.Bitmap;
@@ -15,13 +16,13 @@ package com.soar.tip {
 	import flash.text.TextFormat;
 	
 	/**
-	 * 警告視窗
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * ... 警告視窗
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/5/6 下午 02:56
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
-	
+
 	public class Alert extends Sprite {
 		private var _msg:String;
 		private var _msg_fmt:TextFormat;

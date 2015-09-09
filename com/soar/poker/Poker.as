@@ -1,4 +1,4 @@
-package soar.poker {
+package com.soar.poker {
 	import common.EventFactory;
 	import common.IEvent;
 	import flash.display.MovieClip;
@@ -9,8 +9,12 @@ package soar.poker {
 	
 	/**
 	 * ...
-	 * @author Christian
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class Poker extends MovieClip {
 		private var _poker:MovieClip;
 		private var _pokerClass:Class;

@@ -1,4 +1,5 @@
-package soar.filter {
+package com.soar.filter {
+	
 	import com.soar.ui.component.PushButton;
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -6,9 +7,9 @@ package soar.filter {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/8/13 下午 02:15
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
 	

@@ -1,9 +1,13 @@
-package soar.poker.lordland {
+package com.soar.poker.lordland {
 	
 	/**
 	 * ...
-	 * @author g8sam « Just do it ™ »
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class CardType {
 		/** 斗地主有13種合法的牌型可以出：
 		 * (1) 單張：前面提到過，大小順序從3(最小)到大怪(最大)；

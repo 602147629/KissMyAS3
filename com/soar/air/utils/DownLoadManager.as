@@ -1,4 +1,4 @@
-package soar.air.utils{
+package com.soar.air.utils{
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;
 	import flash.events.MouseEvent;
@@ -7,11 +7,12 @@ package soar.air.utils{
 	
 	/**
 	 * ...
-	 * @copy		 : Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author		 : g8sam « Just do it ™ »
-	 * @since		 : 2015/1/5 上午 10:14
-	 * @version	 : 1.0.2
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class DownLoadManager {
 		private var urlText:TextField = new TextField();
 		private var fr:FileReference = new FileReference();

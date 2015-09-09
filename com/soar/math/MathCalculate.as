@@ -2,7 +2,7 @@ package com.soar.math{
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
@@ -12,9 +12,7 @@ package com.soar.math{
 		/** 黃金比例 */
 		public static var GoldenRatio:Number = 1.6180339887498948482045868343656381177203091798057628621354486227052604628189024497072072041893911374;
 		
-		public function MathCalculate():void {
-			//EntryPoint...
-		}
+		public function MathCalculate():void {}
 		
 		/**
 		 * 隨機範圍

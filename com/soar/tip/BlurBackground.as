@@ -2,7 +2,7 @@
 
    The MIT License
 
-   Copyright (c) 2008 g8sam « Just do it ™ » ( http://g8sam.site90.net )
+   Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -34,18 +34,18 @@ package com.soar.tip{
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
-	/**
+	 /**
 	 * ...
 	 * @Example:
 	 * BlurBackground.getInstance().setting(this._viewNG , this._notEnough , 800 , 600);
 	 * BlurBackground.getInstance().enable();
 	 * BlurBackground.getInstance().disable();
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/8/29 下午 05:28
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
-	
+	 
 	public class BlurBackground extends Sprite {
 		private var _display:DisplayObject;
 		private var _width:int;

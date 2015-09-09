@@ -1,9 +1,13 @@
-package soar.poker.fivePK {
+package com.soar.poker.fivePK {
 	
 	/**
 	 * ...
-	 * @author Christian
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class HoldEquation {
 		private static var _holdEquation:HoldEquation
 		
@@ -21,6 +25,7 @@ package soar.poker.fivePK {
 					flushTest[3]++;
 				}
 			}
+			
 			//如果是同花 找出是哪幾張 
 			for (i = 0; i < 4; i++) {
 				if (flushTest[i] >= 4) {
@@ -32,6 +37,7 @@ package soar.poker.fivePK {
 					return [true, flush];
 				}
 			}
+			
 			return [false, flush];
 		}
 		

@@ -1,13 +1,16 @@
-package soar.poker.card {
+package com.soar.poker.card {
 	
 	/**
-	 * 鬥地主發牌
-	 * @author g8sam « Just do it ™ »
+	 * ... 鬥地主發牌
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2013/3/16 下午 12:03
+	 * @version	：1.0.12
 	 */
+	
 	public class CardEval {
 		
-		public function CardEval() {
-		}
+		public function CardEval() {}
 		
 		public function addCardsList(cards:Array):Vector.<CardInfo> {
 			var len:int = cards.length;
@@ -22,7 +25,8 @@ package soar.poker.card {
 				var num:String = str.slice(1, 3); //數字
 				var cardNum:int; //牌的影格數字值
 				
-				switch (flower) {																//素材影格順序
+				//素材影格順序
+				switch (flower) {																
 					case "2": cardNum = this.parseToNum(num);break;			//2XX 黑桃
 					case "1": cardNum = this.parseToNum(num) + 13;break;	//1XX 紅心
 					case "4": cardNum = this.parseToNum(num) + 26;break;	//4XX 方塊

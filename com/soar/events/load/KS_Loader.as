@@ -10,11 +10,12 @@ package com.soar.events.load {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/4/4 下午 06:38
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
+	
 	public class KS_Loader extends Sprite {
 		private var _loaders:Loader;
 		private var _mcLoader:lnk_McLoader = new lnk_McLoader();

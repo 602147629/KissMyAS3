@@ -1,15 +1,14 @@
-package soar.utils.file {
+package com.soar.utils.file {
 	import flash.net.FileReference;
 	import flash.utils.ByteArray;
 	
 	/**
-	 * 數據導出 txt 檔
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
-	 * @author	：g8sam « Just do it ™ »
+	 * ... 數據導出 txt 檔
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
 	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
-	
 	public class DataExport {
 		private var dataMsg:String = "";
 		

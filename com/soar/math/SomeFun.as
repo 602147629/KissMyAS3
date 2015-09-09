@@ -2,17 +2,15 @@ package com.soar.math {
 	
 	/**
 	 * ...
-	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved.
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
 	 * @author		：g8sam « Just do it ™ »
-	 * @since		：2013/4/23 上午 10:53
+	 * @since		：2013/3/16 下午 12:03
 	 * @version	：1.0.12
 	 */
 	
 	public class SomeFun {
 		
-		public function SomeFun() {
-		
-		}
+		public function SomeFun() {}
 		
 		//九九乘法表
 		public function nineXnineList():void {
