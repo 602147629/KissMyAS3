@@ -15,6 +15,8 @@ package justFly.event {
 		static public const BATTLE_ENTER:String = "battleEnter";
 		static public const BATTLE_READY:String = "battleReady";
 		static public const BATTLE_FIGHT:String = "battleFight";
+		static public const BATTLE_FINISH:String = "battleFinish";
+		
 		static public const BATTLE_NEXT_ROUND:String = "battleNextRound";
 		
 		

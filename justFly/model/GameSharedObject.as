@@ -2,6 +2,7 @@ package justFly.model {
 	import com.junkbyte.console.Cc;
 	import flash.net.SharedObject;
 	import justFly.view.character.PlayerData;
+	import justFly.view.util.JustFightUtil;
 	
 	/**
 	 * ...
@@ -17,87 +18,89 @@ package justFly.model {
 		public const KEY_STR:String = "@";
 		public const REGIST_TIME:int = 300000;
 		
-		public var _so:SharedObject;
+		public var so:SharedObject;
+		
+		private var _playerData:PlayerData;
 		
 		public function GameSharedObject() {
-			this._so = SharedObject.getLocal("justFight", "/");
-			this._so.data.id = "12259";
-			this._so.data.charName = "Soar";
-			this._so.data.money = 1000;
-			this._so.data.lv = 19;
-			this._so.data.exp = 12;
-			this._so.flush();
-			Cc.log(this.checkCode() ? " 資料正確 ": " 資料錯誤 ");
+			try {
+				if (this.so == null) {
+					this.so = SharedObject.getLocal("justFight", "/");
+					Cc.logch("GameSharedObject : " + this.so.data.charName);
+				}
+			} catch (e:Error) {
+				Cc.logch(e.errorID);
+			}
 		}
 		
-		public function create(data:PlayerData):void {
-			this._so = SharedObject.getLocal("justFight", "/");
-			this._so.data.id = data.id;
-			this._so.data.charName = data.charName;
-			this._so.data.money = data.money;
-			this._so.data.lv = data.lv;
-			this._so.data.exp = data.exp;
-			this._so.flush();
+		public function create():void {
+			this._playerData = new PlayerData();
+			this._playerData.id = this.so.data.id;
+			this._playerData.charName = this.so.data.charName;
+			this._playerData.money = this.so.data.money;
+			this._playerData.lv = this.so.data.lv;
+			this._playerData.exp = this.so.data.exp;
+			Cc.logch(this, " =============================================== ");
+			Cc.logch(this, " || create  ");
+			Cc.logch(this, " =============================================== ");
+		}
+		
+		public function newPlayer():void {
+			this._playerData = new PlayerData();
+			this._playerData.id = 1234567890;
+			this._playerData.charName = JustFightUtil.getInstance().createChineseName();
+			this._playerData.money = 0;
+			this._playerData.lv = 1;
+			this._playerData.exp = 0;
+			this.saveData(this._playerData);
+			Cc.logch(this, " =============================================== ");
+			Cc.logch(this, " || 建立新人物  : " + this._playerData.charName);
+			Cc.logch(this, " =============================================== ");
 		}
 		
 		public function checkKey():Boolean {
-			return this._so.data.id == undefined ? false : true;
+			return this.so.data.id == undefined ? false : true;
 		}
 		
 		public function saveData(data:PlayerData):void {
-			this._so = SharedObject.getLocal("justFight");
-			this._so.data.id = data.id;
-			this._so.data.charName = data.charName;
-			this._so.data.money = data.money;
-			this._so.data.lv = data.lv;
-			this._so.data.exp = data.exp;
-			this._so.flush();
+			if (this.so == null) {
+				this.so = SharedObject.getLocal("justFight", "/");
+			}
 			
+			this.so.data.id = data.id;
+			this.so.data.charName = data.charName;
+			this.so.data.money = data.money;
+			this.so.data.lv = data.lv;
+			this.so.data.exp = data.exp;
 			this.codeExe();
-			this.decodeExe(this._so.data.maru);
-			Cc.log(this.checkCode() ? " 資料正確 ": " 資料錯誤 ");
-		}
-		
-		public function loadData():void {
-			trace("loadData : ");
-		}
-		
-		public function clearData(data:PlayerData):void {
-			trace("clearData : ");
+			this.so.flush();
+			Cc.logch(this, " =============================================== ");
+			Cc.logch(this, " || saveData  ");
+			Cc.logch(this, " =============================================== ");
 		}
 		
 		public function codeExe():void {
-			trace(" ============ codeExe ============ ");
-			var dataCode:String = this._so.data.money + KEY2 + "," + (this._so.data.lv + KEY2) + "," + (this._so.data.exp + KEY2) + "," + (this._so.data.charName + KEY2);
-			Cc.log("dataCode : " + dataCode);
-			
+			//Cc.log(this, " ============ codeExe ============ ");
+			var dataCode:String = this.so.data.money + KEY2 + "," + (this.so.data.lv + KEY2) + "," + (this.so.data.exp + KEY2) + "," + (this.so.data.charName + KEY2);
 			var code:String = "";
-			for (var i:int = 0; i < dataCode.length; i ++ ) {
-				trace( "dataCode.charCodeAt(i) : " + dataCode.charCodeAt(i) );
+			for (var i:int = 0; i < dataCode.length; i++) {
 				code = code + (dataCode.charCodeAt(i) + KEY + KEY_STR);
 				
 			}
-			Cc.log("Code : " + code);
-			this._so.data.maru = code;
-			trace(" ============ codeExe ============ ");
+			this.so.data.maru = code;
 		}
 		
 		public function decodeExe(data:String):String {
-			trace(" ============ decodeExe ============ ");
+			//Cc.log(this, " ============ decodeExe ============ ");
 			
 			var code:Array = data.split(KEY_STR);
-			Cc.log("Code : " + code);
 			var decode:String = "";
 			
-			for (var i:int = 0; i < code.length-1; i ++) {
-				trace( "code[i] : " + code[i] );
+			for (var i:int = 0; i < code.length - 1; i++) {
 				var key:String = String(Number(code[i]) - KEY);
 				decode = decode + String.fromCharCode(key);
 			}
 			
-			Cc.log("decode : " + decode);
-			
-			trace(" ============ decodeExe ============ ");
 			return decode;
 		}
 		
@@ -106,26 +109,23 @@ package justFly.model {
 				return true;
 			}
 			
-			if (this._so.data.maru == undefined) {
+			if (this.so.data.maru == undefined) {
 				this.codeExe();
 				return true;
 			}
 			
-			var codeStr:String = this.decodeExe(this._so.data.maru);
+			var codeStr:String = this.decodeExe(this.so.data.maru);
 			var codeAry:Array = codeStr.split(",");
 			
-			Cc.log("codeAry : " + codeAry);
-			Cc.log("codeAry [0] : " + (Number(codeAry[0]) - KEY2) + " @ " + this._so.data.money);
-			Cc.log("codeAry [1] : " + (Number(codeAry[1]) - KEY2) + " @ " + this._so.data.lv);
-			Cc.log("codeAry [2] : " +(Number(codeAry[2]) - KEY2) + " @ " + this._so.data.exp);
-			
-			if (Number(codeAry[0]) - KEY2 == this._so.data.money && 
-				Number(codeAry[1]) - KEY2 == this._so.data.lv &&
-				Number(codeAry[2]) - KEY2 == this._so.data.exp) {
+			if (Number(codeAry[0]) - KEY2 == this.so.data.money && Number(codeAry[1]) - KEY2 == this.so.data.lv && Number(codeAry[2]) - KEY2 == this.so.data.exp) {
 				return true;
 			}
 			
 			return false;
+		}
+		
+		public function get playerData():PlayerData {
+			return _playerData;
 		}
 	
 	}

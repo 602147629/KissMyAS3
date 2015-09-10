@@ -27,7 +27,7 @@ package justFly.view.character {
 		private var _VIT:int = 1; //vitality
 		private var _DEX:int = 1; //dexterity
 		private var _INT:int = 1; //intelligence
-		private var _LUK:int = 1; //luck
+		private var _LUK:int = 1; //lucky
 		
 		private var _ATK:int = 0;
 		private var _ATK_Buffer:int = 0;
@@ -41,7 +41,8 @@ package justFly.view.character {
 		private var _HIT:int = 0;
 		private var _ASPD:Number = 100;
 		
-		//defense
+		// Defense  防御
+		// Victory 戰勝
 		public function CharacterData() {}
 		
 		public function get ID():String {return this._ID;}

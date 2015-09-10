@@ -1,0 +1,237 @@
+{\rtf1\adeflang1025\ansi\ansicpg936\uc2\adeff0\deff0\stshfdbch13\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe2052\themelang1033\themelangfe2052\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f13\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'cb\'ce\'cc\'e5{\*\falt SimSun};}{\f34\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria Math;}
+{\f38\fbidi \fnil\fcharset134\fprq2{\*\panose 00000000000000000000}@\'cb\'ce\'cc\'e5;}{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbmajor\f31501\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'cb\'ce\'cc\'e5{\*\falt SimSun};}{\fhimajor\f31502\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria;}
+{\fbimajor\f31503\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\flominor\f31504\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbminor\f31505\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'cb\'ce\'cc\'e5{\*\falt SimSun};}{\fhiminor\f31506\fbidi \fswiss\fcharset0\fprq2{\*\panose 020f0502020204030204}Calibri;}
+{\fbiminor\f31507\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f40\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\f41\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f43\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\f44\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\f45\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f46\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f47\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\f48\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f172\fbidi \fnil\fcharset0\fprq2 SimSun Western{\*\falt SimSun};}{\f380\fbidi \froman\fcharset238\fprq2 Cambria Math CE;}
+{\f381\fbidi \froman\fcharset204\fprq2 Cambria Math Cyr;}{\f383\fbidi \froman\fcharset161\fprq2 Cambria Math Greek;}{\f384\fbidi \froman\fcharset162\fprq2 Cambria Math Tur;}{\f387\fbidi \froman\fcharset186\fprq2 Cambria Math Baltic;}
+{\f422\fbidi \fnil\fcharset0\fprq2 @\'cb\'ce\'cc\'e5 Western;}{\flomajor\f31508\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\flomajor\f31509\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\flomajor\f31511\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flomajor\f31512\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\flomajor\f31513\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\flomajor\f31514\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flomajor\f31515\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\flomajor\f31516\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}
+{\fdbmajor\f31520\fbidi \fnil\fcharset0\fprq2 SimSun Western{\*\falt SimSun};}{\fhimajor\f31528\fbidi \froman\fcharset238\fprq2 Cambria CE;}{\fhimajor\f31529\fbidi \froman\fcharset204\fprq2 Cambria Cyr;}
+{\fhimajor\f31531\fbidi \froman\fcharset161\fprq2 Cambria Greek;}{\fhimajor\f31532\fbidi \froman\fcharset162\fprq2 Cambria Tur;}{\fhimajor\f31535\fbidi \froman\fcharset186\fprq2 Cambria Baltic;}
+{\fbimajor\f31538\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbimajor\f31539\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fbimajor\f31541\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\fbimajor\f31542\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbimajor\f31543\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fbimajor\f31544\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\fbimajor\f31545\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbimajor\f31546\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\flominor\f31548\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\flominor\f31549\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flominor\f31551\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flominor\f31552\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\flominor\f31553\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flominor\f31554\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flominor\f31555\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\flominor\f31556\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbminor\f31560\fbidi \fnil\fcharset0\fprq2 SimSun Western{\*\falt SimSun};}{\fhiminor\f31568\fbidi \fswiss\fcharset238\fprq2 Calibri CE;}
+{\fhiminor\f31569\fbidi \fswiss\fcharset204\fprq2 Calibri Cyr;}{\fhiminor\f31571\fbidi \fswiss\fcharset161\fprq2 Calibri Greek;}{\fhiminor\f31572\fbidi \fswiss\fcharset162\fprq2 Calibri Tur;}
+{\fhiminor\f31575\fbidi \fswiss\fcharset186\fprq2 Calibri Baltic;}{\fbiminor\f31578\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbiminor\f31579\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\fbiminor\f31581\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fbiminor\f31582\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbiminor\f31583\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\fbiminor\f31584\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fbiminor\f31585\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbiminor\f31586\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;
+\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\*\defchp \fs21\kerning2\dbch\af13 }{\*\defpap \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }
+\noqfpromote {\stylesheet{\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs21\lang1033\langfe2052\kerning2\loch\f0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 
+\snext0 \sqformat \spriority0 Normal;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs21\alang1025 \ltrch\fcs0 \fs21\lang1033\langfe2052\kerning2\loch\f0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 
+\snext11 \ssemihidden \sunhideused \sqformat Normal Table;}{\s15\qc \li0\ri0\nowidctlpar\brdrb\brdrs\brdrw15\brsp20 \tqc\tx4153\tqr\tx8306\wrapdefault\aspalpha\aspnum\faauto\nosnaplinegrid\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs18\alang1025 
+\ltrch\fcs0 \fs18\lang1033\langfe2052\kerning2\loch\f0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext15 \slink16 \styrsid15098623 header;}{\*\cs16 \additive \rtlch\fcs1 \af0\afs18 \ltrch\fcs0 \fs18 
+\sbasedon10 \slink15 \slocked \ssemihidden \'d2\'b3\'c3\'bc Char;}{\s17\ql \li0\ri0\nowidctlpar\tqc\tx4153\tqr\tx8306\wrapdefault\aspalpha\aspnum\faauto\nosnaplinegrid\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs18\alang1025 \ltrch\fcs0 
+\fs18\lang1033\langfe2052\kerning2\loch\f0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext17 \slink18 \styrsid15098623 footer;}{\*\cs18 \additive \rtlch\fcs1 \af0\afs18 \ltrch\fcs0 \fs18 \sbasedon10 \slink17 \slocked \ssemihidden 
+\'d2\'b3\'bd\'c5 Char;}{\*\cs19 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \ul\cf2 \sbasedon10 \styrsid15098623 Hyperlink;}}{\*\pgptbl {\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}}{\*\rsidtbl \rsid489966\rsid682811\rsid1069012\rsid1462542\rsid2231290\rsid2847010
+\rsid2909350\rsid3156821\rsid3482591\rsid3869496\rsid4001084\rsid4419642\rsid4477090\rsid4874789\rsid5981631\rsid6493368\rsid6892218\rsid7431100\rsid7798850\rsid7939098\rsid8148265\rsid8347299\rsid8793287\rsid9449096\rsid10236727\rsid10700087\rsid10820497
+\rsid10897542\rsid11035989\rsid11282186\rsid11551674\rsid12020351\rsid12323402\rsid13312263\rsid13323098\rsid13641462\rsid13658056\rsid14427003\rsid14707564\rsid14880396\rsid15021282\rsid15098623\rsid15342183\rsid15542549\rsid15611782\rsid15817367
+\rsid15866361\rsid16195404}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info{\title 戏角色命名与游戏风格}{\subject 戏角色命名与游戏风格}{\author \'ce\'c4\'bf\'e2\'cf\'c2\'d4\'d8\'cd\'f8}
+{\keywords \'ce\'c4\'bf\'e2\'cf\'c2\'d4\'d8}{\doccomm http://www.360docs.net/doc/info-df8b322f453610661ed9f4ae.html}{\operator \'b7\'ac\'c7\'d1\'bb\'a8\'d4\'b0}{\creatim\yr2013\mo9\dy28\hr22\min9}{\revtim\yr2014\mo3\dy14\hr22\min39}{\version34}{\edmins51}{\nofpages1}{\nofwords120}{\nofchars163}
+{\*\manager http://www.360docs.net/}{\*\company http://www.360docs.net/}{\*\category \'ce\'c4\'bf\'e2\'cf\'c2\'d4\'d8}{\nofcharsws282}{\vern32859}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}{\xmlns2 urn:schemas-microsoft-co
+m:office:smarttags}}\paperw11906\paperh16838\margl1134\margr1134\margt1134\margb1134\gutter0\ltrsect 
+\deftab420\ftnbj\aenddoc\trackmoves1\trackformatting1\donotembedsysfont1\relyonvml0\donotembedlingdata0\grfdocevents0\validatexml1\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors1\formshade\horzdoc\dgmargin\dghspace180\dgvspace156
+\dghorigin1134\dgvorigin1134\dghshow0\dgvshow2\jcompress\ksulang2052\lnongrid
+\viewkind1\viewscale85\splytwnine\ftnlytwnine\htmautsp\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct\asianbrkrule\rsidroot3869496\newtblstyruls\nogrowautofit {\*\fchars 
+!),.:\'3b?]\'7d\'a1\'a7\'a1\'a4\'a1\'a6\'a1\'a5\'a8\'44\'a1\'ac\'a1\'af\'a1\'b1\'a1\'ad\'a1\'c3\'a1\'a2\'a1\'a3\'a1\'a8\'a1\'a9\'a1\'b5\'a1\'b7\'a1\'b9\'a1\'bb\'a1\'bf\'a1\'b3\'a1\'bd\'a3\'a1\'a3\'a2\'a3\'a7\'a3\'a9\'a3\'ac\'a3\'ae\'a3\'ba\'a3\'bb\'a3\'bf\'a3\'dd\'a3\'e0\'a3\'fc\'a3\'fd\'a1\'ab\'a1\'e9
+}{\*\lchars ([\'7b\'a1\'a4\'a1\'ae\'a1\'b0\'a1\'b4\'a1\'b6\'a1\'b8\'a1\'ba\'a1\'be\'a1\'b2\'a1\'bc\'a3\'a8\'a3\'ae\'a3\'db\'a3\'fb\'a1\'ea\'a3\'a4}\fet0{\*\wgrffmtfilter 013f}\ilfomacatclnup0{\*\template 
+C:\\Documents and Settings\\Administrator\\\'d7\'c0\'c3\'e6\\doc.dot}{\*\ftnsep \ltrpar \pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs21\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14707564 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs21\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14707564 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs21\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14707564 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs21\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14707564 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\linex0\headery851\footery992\colsx425\endnhere\sectlinegrid312\sectspecifyl\sectrsid6493368\sftnbj {\headerr \ltrpar \pard\plain \ltrpar\s15\qc \li0\ri0\nowidctlpar\brdrb\brdrs\brdrw15\brsp20 
+\tqc\tx4153\tqr\tx8306\wrapdefault\aspalpha\aspnum\faauto\nosnaplinegrid\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs18\alang1025 \ltrch\fcs0 \fs18\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \b\f13\fs24\cf6\insrsid8347299 \hich\af13\dbch\af13\loch\f13 360}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \b\f13\fs24\cf6\insrsid8347299 \loch\af13\hich\af13\dbch\f13 \'ce\'c4\'b5\'b5\'d6\'d0\'d0\'c4}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\b\f13\fs24\cf6\insrsid6493368\charrsid15098623 \hich\af13\dbch\af13\loch\f13  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \b\f13\fs24\cf6\insrsid8347299 \hich\af13\dbch\af13\loch\f13 word}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\b\f13\fs24\cf6\insrsid6493368\charrsid15098623 \loch\af13\hich\af13\dbch\f13 \'ce\'c4\'b5\'b5\'cf\'c2\'d4\'d8}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \b\f13\fs24\cf6\insrsid8347299 \loch\af13\hich\af13\dbch\f13 \'cd\'f8\'d5\'be}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \b\fs24\cf6\loch\af13\insrsid6493368\charrsid15098623 
+\par }\pard \ltrpar\s15\qc \li0\ri0\nowidctlpar\brdrb\brdrs\brdrw15\brsp20 \tqc\tx4153\tqr\tx8306\wrapdefault\aspalpha\aspnum\faauto\nosnaplinegrid\adjustright\rin0\lin0\itap0\pararsid8347299 {\field{\*\fldinst {\rtlch\fcs1 \af0\afs32 \ltrch\fcs0 
+\f13\fs32\cf6\insrsid8347299 \hich\af13\dbch\af13\loch\f13  HYPERLINK "}{\rtlch\fcs1 \af0\afs32 \ltrch\fcs0 \f13\fs32\cf6\insrsid8347299\charrsid8347299 \hich\af13\dbch\af13\loch\f13 http://www.360docs.net/}{\rtlch\fcs1 \af0\afs32 \ltrch\fcs0 
+\f13\fs32\cf6\insrsid8347299 \hich\af13\dbch\af13\loch\f13 " }}{\fldrslt {\rtlch\fcs1 \af0\afs32 \ltrch\fcs0 \cs19\f13\fs32\ul\cf2\insrsid8347299\charrsid13641462 \hich\af13\dbch\af13\loch\f13 http://www.360docs.net/}}}\sectd \ltrsect
+\linex0\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af0\afs32 \ltrch\fcs0 \fs32\cf6\loch\af13\insrsid8347299\charrsid8347299 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang 
+{\pntxta \dbch )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}
+{\pntxta \dbch )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}\pard\plain \ltrpar\qj \li0\ri0\sl180\slmult0
+\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6493368 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs21\lang1033\langfe2052\kerning2\loch\af0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid6493368 \loch\af0\hich\af0\dbch\f13 \'a1\'a1\'a1\'a1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6493368 
+\par }\pard \ltrpar\qc \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15817367 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid6493368\charrsid6493368 \loch\af0\hich\af0\dbch\f13 \'b1\'be\'ce\'c4\'b5\'b5
+\'cf\'c2\'d4\'d8\'d7\'d4}{\field\fldedit{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\cf11\insrsid8347299 \hich\af0\dbch\af13\loch\f0 HYPERLINK "http://www.360docs.net"}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\cf11\insrsid8148265\charrsid6493368 
+{\*\datafield 00d0c9ea79f9bace118c8200aa004ba90b0200000003000000e0c9ea79f9bace118c8200aa004ba90b4800000068007400740070003a002f002f007700770077002e0033003600300064006f00630073002e006e00650074002f000000795881f43b1d7f48af2c825dc485276300000000a5ab000000}}
+}{\fldrslt {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs19\fs24\ul\cf2\insrsid8347299 \hich\af0\dbch\af13\loch\f0 360}{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs19\fs24\ul\cf2\insrsid8347299 \loch\af0\hich\af0\dbch\f13 \'ce\'c4\'b5\'b5\'d6\'d0\'d0\'c4}}}\sectd \ltrsect
+\linex0\headery851\footery992\colsx425\endnhere\sectlinegrid312\sectspecifyl\sectrsid6493368\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid8347299 \loch\af0\hich\af0\dbch\f13 \'a3\'ac\'b8\'fc\'b6\'e0\'c3\'e2\'b7\'d1\'ce\'c4\'b5\'b5\'c7\'eb\'b7\'c3
+\'ce\'ca\'cd\'f8\'d6\'b7}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid8347299 \hich\af0\dbch\af13\loch\f0 http://www.360docs.net}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid6493368 
+\par }\pard \ltrpar\qc \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid3869496 {\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid15866361 \hich\af0\dbch\af13\loch\f0  HYPERLINK "http://www.360docs.net/doc/info-df8b322f453610661ed9f4ae.html" 
+}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid8148265\charrsid15866361 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b0200000003000000e0c9ea79f9bace118c8200aa004ba90b6600000068007400740070003a002f002f006200620073002e007800750065006800610069002e006e00650074002f00670065007400700061007300730077006f00720064002e0061007300700078000000795881f4
+3b1d7f48af2c825dc485276300000000a5ab00000000000000}}}{\fldrslt {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs19\fs24\ul\cf2\insrsid3869496\charrsid15866361 \hich\af0\dbch\af13\loch\f0 http://www.360docs.net/doc/info-df8b322f453610661ed9f4ae.html}}}\sectd \ltrsect
+\linex0\headery851\footery992\colsx425\endnhere\sectlinegrid312\sectspecifyl\sectrsid6493368\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\insrsid6493368\charrsid6493368 
+\par }\pard \ltrpar\qj \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6493368 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6493368 
+\par }\pard \ltrpar\qc \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid3869496{\rtlch\fcs1 \af0\afs36 \ltrch\fcs0 \b\fs36\insrsid3869496\charrsid15866361 \loch\af0\hich\af0\dbch\f13 戏角色命名与游戏风格}{
+\rtlch\fcs1 \af0\afs36 \ltrch\fcs0 \b\fs36\insrsid6493368\charrsid15866361 
+\par }\pard \ltrpar\qj \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6493368 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6493368 
+\par 
+\par }\pard \ltrpar\qj \li0\ri0\sl360\slmult1\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15866361 {\rtlch\fcs1 \af0 \ltrch\fcs0 \f13\fs24\insrsid3869496\charrsid15866361 \hich\af13\dbch\af13\loch\f13 戏角色命名与游戏风格\par\par
+在制作RPG、AVG、回合制SLG游戏的过程中，只要自己设定的故事，都不可避免会出现给游戏角色命名的问题。\par\par
+其实给游戏角色命名，如同写小说给人物设计名字一样，需要根据游戏的内容、风格做相映的读者设定。\par\par
+让我们来看看文学作品中，大师们如何给他们的人物起名字的。\par\par
+阿Q：这是鲁迅先生《阿Q正传》中的主角名字，产生于二、三十年代新文化运动后期，这个“Q”字，很洋气的英文字母，堂而皇之的出现在一个清朝末年的角色身上，给人以视角冲击。人们首先会想，为什么会叫这个名字，在没有读之前，就对作品产生了极大的好奇心。这个“阿”字与人物不识字划圈签名，调戏吴妈，骂小尼姑等等土的掉碴儿的事有丝丝联系；这个“Q”又与人物，对于不了解的事，盲目崇拜和追求，动毋“新潮”“革命”的洋事儿有些许关系。这一土一洋，构成了“阿Q”这个人名，也构成了《阿Q正传》的精彩故事。\par\par
+孔乙己：这是鲁迅《孔乙己》中的角色命名，在中国历史战国以后，“乙”和“己”字就很少用在人的名字中，但这两个字竟然同时出现在一个清末民初的文人的名字中。圣人孔丘的姓，两个生僻字合成的名，与情节中他细细讲解“回”字的四种写法相辅相成，颇耐人回味。\par\par
+韩老六、杨老疙疸、老孙头、李毛驴：这是周立波《暴风骤雨》中的人物名字，讲述的是土改时期发生的故事。光从名字我们就可以知道这个故事是发生在农村，好土的名字。而且从名字中，可以看出他们的职业、性格，象李毛驴这个名字，实际上是外号，但就在小说中成了他的名字，非常有特色。\par\par
+令狐冲、欧阳峰、洪七公、灭绝师太：这是金庸的武侠小说中的出现的角色，也许我们看的武侠小说太多了，但诸如令狐、欧阳、司马、淳于、东方这样现实生活中很少出现的姓，和无忌、逍遥、破天、求败、不败这样很少出现名，朗朗上口，让人一看就是知道进入的是迷幻的武侠世界。再加上武侠小说中的绰号的概念，这可能是从《水浒》中得来的灵感，给我们一个有趣的公式：酷绰号   怪名字 = 个性化角色。不信套一下就可以看出。“铁掌水上飘”裘千仞（衍生出裘千丈、裘千尺，如果再有个小弟毫无肄问该叫裘千寸了，难以想象家长会给孩子起这样的名儿）、“飞天蝙蝠”柯镇恶（衍生出柯辟邪，象去病、无忌当属这类）、“千手人屠”彭连虎……这样的名字当然也是为了突出人物个性和小说风格。\par\par
+朱七七、熊猫儿、老实和尚、牛肉面、楚留香（做案后故意留下香味）、胡铁（蝴蝶）花：这几个人物都是古龙新派作品中比较有名的。分别是《武林外史》、《陆小凤传奇》、《楚留香传奇》中的角色。这样起名，真是一个“新”字，朱七七尚可以理解为明朝故事（明朝没有身份的百姓是没有名字的，都是“重五”“初八”“七七”这样的数字，朱元璋就是一例。），象熊猫儿、牛肉面、老实和尚则纯属外号变名，而楚留香（是他父母给他起名时，就知道他将来要当小偷并故意留香，还是他为了自己的名字中有“留香”两个字，才有意这样做的？）就属于作者有意设定个性化人物和风格化故事了。\par\par
+张大民、李木勺、小树、古三儿：刘恒《贫嘴张大民的幸福生活》人物，是八、九年代城市背景发生在工人家庭的故事。对每一个名字的设定都赋与的个性，保温瓶厂的张大民、喂猪的李木勺、因房中有树得名的张小树、城市混混古三儿，可见每个名字都下过功夫。\par\par
+……\par\par
+
+呜！一口气写了这么多与主题没有关系的内容，快收不住笔了。好了，回到主题，在游戏中很多名字和写小说是差不多的。我们再来看看，\par\par
+武侠派《仙剑奇侠传》中的李逍遥、赵灵儿及李逍遥的父母“南盗”夫妇……在这款游戏中，名字起的与小说差不多，带有很浓的武侠色彩。且灵儿的巧、轻，月茹的凝、重，无论是名字还是性格，都把握非常准确。\par\par
+《大富翁》在搞笑为主，阿土仔、小丹尼、玛格丽特……看完他们的故事背景，会发现名字起得非常帖切，加上卡通滑稽的造型，把人物刻划的栩栩如生。在不少搞笑游戏中，名字非常表现这一点，象什么拿巨轮、韦大宝、王财神之类的都异曲同工。\par\par
+还有……唉，不得不承认，国内的自己写的游戏故事脚本还是非常少。大多改编名著或是武侠小说，那是人家原著上起得名字，就不大好评析和说明。\par\par
+但是不是这篇文章就毫无用处呢？当然不是，精华往往留在最后。\par\par
+让我们来把游戏风格做一下简单分类：\par\par
+搞笑风格： 这类游戏起名益轻松活泼，根据内容甚至可以把历史或是文学作品中的成品角色生搬进来也无妨大碍。不论是秦始皇还是莎士比亚，管他是宙斯神还是二郎神，只要有个性、有特点、有喜剧效果，谁都无所谓。有的名字也可如上面提到的略微一改，效查徒增；有的名字突出个性，王财神一听就是商人或是地主、严霸天一听就是恶霸、ZR0455一听就是机器人。另外给这样的游戏角色起名时，还可以突出一个“奇”字。比如说：一个大丑老太太，可以起名为“赛西施”、“小美”；一个巨胖大汉，可以起名为“飘儿”、“俏儿”这样会更添搞笑的效果。\par\par
+严肃风格： 在严肃风格中，就要根据游戏的背景和角色分类起名了。\par\par
+A。中国古代历史背景：首先排除掉你改编成品小说的情况，因为这类情况无需要你起名儿，关羽、诸葛亮什么的早就是现成的了。但如果非此类，就要下一番工夫了。如下：\par\par
+a.汉以前，在最古老的黄帝、炎帝时期，属母系社会，如果你的背景发生在这时完全没有必要给角色加姓，因为那时人们知母不知父，姓更无从谈起。所以名字只一个字就可，X，阿X，X儿。如果非要起姓可以起一些古老的姓不会有错，如姬、熊、姜、姚、风、祁等等。春秋战国时期除了各国有国姓，而且名字非常古怪，不妨按他们的格式起，秦国姓嬴，楚国姓芈、熊，燕国姓姬，齐国姓原姬，后田和夺齐后为田，赵魏韩国姓同国名等等，多研究当时的历史和姓氏学，就不难了。比如说慕容、宇文、呼延都是鲜卑人的姓，如果你出现在秦汉以前，就会被笑话了。再比如说商鞅我们都知道，他本姓公孙，是卫国人，封在商邑。历史上说的商鞅、卫鞅、公孙鞅、商君都是指他。\par\par
+b.秦汉时期以后，这一阶段中国的姓名非常复杂，如我们知道的，无数次汉民族与异民族的合而又分经历，使中国人的姓名空前的复杂。象晋朝士大夫的旺族王、谢两姓就直接影响到仕途；居山东曲阜的孔姓世家一直被历代统治者关照着；唐朝的崔、卢等姓也是很大的世家；明朝百姓的名字往往是数字。另外，这时一个人除了姓、名之外还有字、号，如果是名人死后还有谥号，如果对文学有成就还有世称（象是鲍参军即鲍照、阮步兵即阮籍、杜工部即杜甫等等）。如果是这样的游戏，在起名时，还是减少一些个性的突出，增加一些历史的真实为好。\par\par
+
+B。武侠背景：如果要想加深玩家对你设定角色的映象，跳回到分析武侠小说命名那一节，因为玩家在武侠游戏中扮演一个角色与看武侠小说一样还是寻求一种大侠、高手的快感。何不让他发挥的更淋漓尽致呢。如果有可能，连绰号也可以由玩家自己起，象MUD类游戏一样。给NPC起名，尽可能的使用“酷绰号   怪名字 = 个性化角色”公式。\par\par
+C。其它背景：其它的游戏背景则按其背景时间及相关要素起名。（跟没说一样）如抗日题材的游戏脚本，正派角色可以起老钟叔（抗日老八路），李大海（八路军排长，铁青胡子碴儿那种），杨伢仔（抗日儿童团团长），龟田丘一郎（日本“亲善”部队指挥大佐）……再如现代推理侦破游戏脚本，侦揖队队长，重案组组长，警花，警队中较淘气的小伙子们，反派角色中毒凫、小喽罗，被骗的台湾富商，来自东南亚的杀手，这些角色都可以以其性格和其它背景来做相映的命名。在给少数民族、外国人起名时，应注意其姓名文化。蒙古族、藏族没有姓只有名，如巴特、洛桑、喀金；维吾尔、哈萨克等民族的名字与欧美人的姓名相像，儿子用父亲的名做自己的姓，如阿不都拉·克里木的父亲就叫阿不都拉，将来他的儿子姓克里木；达斡尔、鄂仑春、鄂温克、锡伯、满等民族都是有自己的“族姓”的，如吉达尔、敖蕾、鄂嫩等等。一些外国国家有一些普遍的国姓，如朝鲜韩国的“金”越南的“阮”“黎”“胡”等等。可以说，这是一门可以称为姓名学的学问，细细看来，牵扯到各民族各国的历史和文化。虽然不用研究的那么深，至少还是应该做一些最基本的了解和调查的。\par\par
+ \par\par}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs24\loch\af13\insrsid6493368\charrsid15866361 
+\par }\pard \ltrpar\qj \li0\ri0\sl180\slmult0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6493368 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6493368 
+\par 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218\charrsid6892218 \hich\af13\dbch\af13\loch\f13 360}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218\charrsid6892218 \loch\af13\hich\af13\dbch\f13 \'ce\'c4\'b5\'b5\'d6\'d0\'d0\'c4}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218 -}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218\charrsid6892218 \loch\af13\hich\af13\dbch\f13 \'ba\'a3\'c1\'bf\'c3\'e2\'b7\'d1}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\f13\fs28\insrsid6892218\charrsid6892218 \hich\af13\dbch\af13\loch\f13 word}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218\charrsid6892218 \loch\af13\hich\af13\dbch\f13 \'ce\'c4\'b5\'b5\'a3\'ac}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\f13\fs28\insrsid6892218\charrsid6892218 \hich\af13\dbch\af13\loch\f13 ppt}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\insrsid6892218\charrsid6892218 \loch\af13\hich\af13\dbch\f13 \'c4\'a3\'b0\'e5\'cf\'c2\'d4\'d8\'a1\'a3\'ba\'ad\'b8\'c7\'bd\'cc\'d3\'fd
+\'a1\'a2\'d6\'b0\'b3\'a1\'a1\'a2\'c9\'fa\'bb\'ee\'d3\'a6\'d3\'c3\'b5\'c8\'b8\'f7\'d0\'d0\'d2\'b5\'a1\'a3\'dc\'f6\'dd\'cd\'d3\'aa\'cf\'fa\'a3\'ac\'d6\'b0\'d2\'b5\'b9\'e6\'bb\'ae\'a3\'ac\'b9\'a4\'d7\'f7\'bc\'f2\'c0\'fa\'a3\'ac\'c8\'eb\'b5\'b3\'a3\'ac
+\'b9\'a4\'d7\'f7\'b1\'a8\'b8\'e6\'a3\'ac\'b9\'a4\'d7\'f7\'d7\'dc\'bd\'e1\'a3\'ac\'d1\'a7\'cf\'b0\'d7\'ca\'c1\'cf\'a3\'ac\'d6\'aa\'ca\'b6\'b5\'e3\'d7\'dc\'bd\'e1\'b5\'c8\'be\'ab\'c6\'b7\'ce\'c4\'b5\'b5\'a1\'a3}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\loch\af13\insrsid12323402 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\cf11\insrsid13323098 \hich\af13\dbch\af13\loch\f13 360}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\cf11\insrsid13323098 \loch\af13\hich\af13\dbch\f13 \'ce\'c4\'b5\'b5\'d6\'d0\'d0\'c4}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \f13\fs28\cf11\insrsid6493368\charrsid6493368 \hich\af13\dbch\af13\loch\f13  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f13\fs28\cf11\insrsid13323098\charrsid13323098 \hich\af13\dbch\af13\loch\f13 http://www.360docs.net}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \f13\fs28\cf11\insrsid13323098 \hich\af13\dbch\af13\loch\f13 /}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf11\loch\af13\insrsid15098623\charrsid13323098 
+\par }{\*\themedata 504b030414000600080000002100828abc13fa0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb6ac3301045f785fe83d0b6d8
+72ba28a5d8cea249777d2cd20f18e4b12d6a8f843409c9df77ecb850ba082d74231062ce997b55ae8fe3a00e1893f354e9555e6885647de3a8abf4fbee29bbd7
+2a3150038327acf409935ed7d757e5ee14302999a654e99e393c18936c8f23a4dc072479697d1c81e51a3b13c07e4087e6b628ee8cf5c4489cf1c4d075f92a0b
+44d7a07a83c82f308ac7b0a0f0fbf90c2480980b58abc733615aa2d210c2e02cb04430076a7ee833dfb6ce62e3ed7e14693e8317d8cd0433bf5c60f53fea2fe7
+065bd80facb647e9e25c7fc421fd2ddb526b2e9373fed4bb902e182e97b7b461e6bfad3f010000ffff0300504b030414000600080000002100a5d6a7e7c00000
+00360100000b0000005f72656c732f2e72656c73848fcf6ac3300c87ef85bd83d17d51d2c31825762fa590432fa37d00e1287f68221bdb1bebdb4fc7060abb08
+84a4eff7a93dfeae8bf9e194e720169aaa06c3e2433fcb68e1763dbf7f82c985a4a725085b787086a37bdbb55fbc50d1a33ccd311ba548b63095120f88d94fbc
+52ae4264d1c910d24a45db3462247fa791715fd71f989e19e0364cd3f51652d73760ae8fa8c9ffb3c330cc9e4fc17faf2ce545046e37944c69e462a1a82fe353
+bd90a865aad41ed0b5b8f9d6fd010000ffff0300504b0304140006000800000021006b799616830000008a0000001c0000007468656d652f7468656d652f7468
+656d654d616e616765722e786d6c0ccc4d0ac3201040e17da17790d93763bb284562b2cbaebbf600439c1a41c7a0d29fdbd7e5e38337cedf14d59b4b0d592c9c
+070d8a65cd2e88b7f07c2ca71ba8da481cc52c6ce1c715e6e97818c9b48d13df49c873517d23d59085adb5dd20d6b52bd521ef2cdd5eb9246a3d8b4757e8d3f7
+29e245eb2b260a0238fd010000ffff0300504b030414000600080000002100c71c6d149c060000511b0000160000007468656d652f7468656d652f7468656d65
+312e786d6cec594d6f1b4518be23f11f467b6f6327761a4775aad8b11b68d346b15bd4e3783dde9d7a766735334eea1b6a8f484888827aa012e2c20101955a09
+24caaf49292a45ea5fe09d99ddf54ebc26491b4105f521f1ce3eeff7c7bc33be78e94ec4d03e1192f2b8e955cf573c44629f0f691c34bd1bfdeeb9350f4985e3
+21663c264d6f4aa47769e3fdf72ee27515928820a08fe53a6e7aa152c9fad292f46119cbf33c2131bc1b711161058f22581a0a7c007c23b6b45ca9ac2e4598c6
+1e8a71046caf8f46d427e8d9cfbfbcf8e681b79171ef3010112ba9177c267a9a3771480c7638ae6a849cca3613681fb3a6078286fca04fee280f312c15bc687a
+15f3f196362e2ee1f59488a905b405baaef9a47429c170bc6c648a60900bad766b8d0b5b397f03606a1ed7e974da9d6acecf00b0ef83a5569722cf5a77addaca
+781640f6eb3cef76a55ea9b9f802ff95399d1bad56abde4875b14c0dc87eadcde1d72aabb5cd65076f40165f9fc3d75a9bedf6aa8337208b5f9dc3772f34566b
+2ede804246e3f11c5a07b4db4db9e7901167dba5f03580af5552f80c05d99067971631e2b15a946b11becd4517001ac8b0a23152d3848cb00f69dcc6d14050ac
+05e075820b6fec922fe796b42c247d4113d5f43e4c3094c48cdfaba7dfbf7afa181dde7d7278f7a7c37bf70eeffe68193954db380e8a542fbffdeccf871fa33f
+1e7ffdf2fe17e57859c4fff6c327cf7efdbc1c08e53353e7f9978f7e7ff2e8f9834f5f7c77bf04be29f0a008efd38848748d1ca03d1e8161c62baee664204e47
+d10f312d526cc681c431d6524af87754e8a0af4d314ba3e3e8d122ae076f0a681f65c0cb93db8ec2bd504c142d917c258c1ce00ee7acc545a917ae68590537f7
+2771502e5c4c8ab83d8cf7cb64b771ecc4b73349a06f6669e918de0e89a3e62ec3b1c201898942fa1d1f135262dd2d4a1dbfee505f70c9470adda2a88569a94b
+fa74e064d38c689b4610976999cd106fc7373b37518bb332abb7c8be8b84aac0ac44f93e618e1b2fe389c25119cb3e8e58d1e157b10acb94ec4d855fc475a482
+48078471d4191229cb68ae0bb0b710f42b183a5669d877d834729142d17119cfab98f322728b8fdb218e92326c8fc66111fb811c438a62b4cb55197c87bb15a2
+9f210e385e18ee9b9438e13ebe1bdca081a3d22c41f49b89d0b18456ed74e088c67fd78e19857e6c73e0ecda3134c0e75f3d2cc9acb7b5116fc29e545609db47
+daef22dcd1a6dbe66248dffe9ebb8527f12e81349fdf78deb5dc772dd7fbcfb7dc45f57cd2463bebadd076f5dc6087623322470b27e41165aca7a68c5c956648
+96b04f0cbbb0a8e9ccf190e427a62484af695f777081c0860609ae3ea22aec85388101bbea6926814c590712255cc2c1ce2c97f2d67818d2953d16d6f581c1f6
+0389d50e1fdae515bd9c9d0b723666b709cce13313b4a2199c54d8ca85942998fd3ac2aa5aa9134bab1ad54cab73a4e526430ce74d83c5dc9b308020185bc0cb
+ab7040d7a2e1608219196abfdbbd370b8b89c2598648867848d21869bbe763543541ca72c5dc0440ee94c4481ff28ef15a415a43b37d0369270952515c6d81b8
+2c7a6f12a52c836751d2757ba41c595c2c4e16a383a6d7a82fd73de4e3a4e98de04c0b5fa304a22ef5cc8759003743be1236ed8f2d6653e5b3683632c3dc22a8
+c23585f5fb9cc14e1f4884545b58863635ccab340558ac2559fd97ebe0d6b332c066fa6b68b1b206c9f0af69017e74434b4623e2ab62b00b2bda77f6316da57c
+a288e885c303346013b18721fc3a55c19e21957035613a827e807b34ed6df3ca6dce69d1156faf0cceae639684386db7ba44b34ab67053c7b90ee6a9a01ed856
+aabb31eef4a698923f23538a69fc3f3345ef277053b032d411f0e11e5760a4ebb5e971a1420e5d2809a9df15303898de01d90277b1f01a920a6e93cd7f41f6f5
+7f5b739687296b38f0a93d1a2041613f52a1206417da92c9be639855d3bdcbb2642923935105756562d51e907dc2faba07aeeabddd4321a4bae926691b30b8a3
+f9e73ea7153408f49053ac37a787e47bafad817f7af2b1c50c46b97dd80c3499ff73154b76554b6fc8b3bdb768887e311bb36a595580b0c256d048cbfe355538
+e5566b3bd69cc5cbf54c3988e2bcc5b0980f4409dcf720fd07f63f2a7c464c1aeb0db5cff7a0b722f8a1413383b481ac3e67070fa41ba45d1cc0e064176d3269
+56d6b5e9e8a4bd966dd6673ce9e6728f385b6b7692789fd2d9f970e68a736af12c9d9d7ad8f1b55d5be86a88ecd11285a5517690318131bf69157f75e283db10
+e82db8df9f30254d32c16f4a02c3e8d9337500c56f251ad28dbf000000ffff0300504b0304140006000800000021000dd1909fb60000001b0100002700000074
+68656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73848f4d0ac2301484f78277086f6fd3ba109126dd88d0add40384
+e4350d363f2451eced0dae2c082e8761be9969bb979dc9136332de3168aa1a083ae995719ac16db8ec8e4052164e89d93b64b060828e6f37ed1567914b284d26
+2452282e3198720e274a939cd08a54f980ae38a38f56e422a3a641c8bbd048f7757da0f19b017cc524bd62107bd5001996509affb3fd381a89672f1f165dfe51
+4173d9850528a2c6cce0239baa4c04ca5bbabac4df000000ffff0300504b01022d0014000600080000002100828abc13fa0000001c0200001300000000000000
+000000000000000000005b436f6e74656e745f54797065735d2e786d6c504b01022d0014000600080000002100a5d6a7e7c0000000360100000b000000000000
+000000000000002b0100005f72656c732f2e72656c73504b01022d00140006000800000021006b799616830000008a0000001c00000000000000000000000000
+140200007468656d652f7468656d652f7468656d654d616e616765722e786d6c504b01022d0014000600080000002100c71c6d149c060000511b000016000000
+00000000000000000000d10200007468656d652f7468656d652f7468656d65312e786d6c504b01022d00140006000800000021000dd1909fb60000001b010000
+2700000000000000000000000000a10900007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73504b050600000000050005005d0100009c0a00000000}
+{\*\colorschememapping 3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d3822207374616e64616c6f6e653d22796573223f3e0d0a3c613a636c724d
+617020786d6c6e733a613d22687474703a2f2f736368656d61732e6f70656e786d6c666f726d6174732e6f72672f64726177696e676d6c2f323030362f6d6169
+6e22206267313d226c743122207478313d22646b3122206267323d226c743222207478323d22646b322220616363656e74313d22616363656e74312220616363
+656e74323d22616363656e74322220616363656e74333d22616363656e74332220616363656e74343d22616363656e74342220616363656e74353d22616363656e74352220616363656e74363d22616363656e74362220686c696e6b3d22686c696e6b2220666f6c486c696e6b3d22666f6c486c696e6b222f3e}
+{\*\latentstyles\lsdstimax267\lsdlockeddef0\lsdsemihiddendef1\lsdunhideuseddef1\lsdqformatdef0\lsdprioritydef99{\lsdlockedexcept \lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority0 \lsdlocked0 Normal;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 1;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 2;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 3;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 4;
+\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 5;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 6;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 7;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 8;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 9;
+\lsdpriority39 \lsdlocked0 toc 1;\lsdpriority39 \lsdlocked0 toc 2;\lsdpriority39 \lsdlocked0 toc 3;\lsdpriority39 \lsdlocked0 toc 4;\lsdpriority39 \lsdlocked0 toc 5;\lsdpriority39 \lsdlocked0 toc 6;\lsdpriority39 \lsdlocked0 toc 7;
+\lsdpriority39 \lsdlocked0 toc 8;\lsdpriority39 \lsdlocked0 toc 9;\lsdqformat1 \lsdpriority35 \lsdlocked0 caption;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority10 \lsdlocked0 Title;\lsdpriority1 \lsdlocked0 Default Paragraph Font;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority11 \lsdlocked0 Subtitle;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority22 \lsdlocked0 Strong;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority20 \lsdlocked0 Emphasis;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority59 \lsdlocked0 Table Grid;\lsdunhideused0 \lsdlocked0 Placeholder Text;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority1 \lsdlocked0 No Spacing;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 1;\lsdunhideused0 \lsdlocked0 Revision;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority34 \lsdlocked0 List Paragraph;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority29 \lsdlocked0 Quote;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority30 \lsdlocked0 Intense Quote;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority19 \lsdlocked0 Subtle Emphasis;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority21 \lsdlocked0 Intense Emphasis;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority31 \lsdlocked0 Subtle Reference;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority32 \lsdlocked0 Intense Reference;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority33 \lsdlocked0 Book Title;\lsdpriority37 \lsdlocked0 Bibliography;\lsdqformat1 \lsdpriority39 \lsdlocked0 TOC Heading;}}{\*\datastore 010500000200000018000000
+4d73786d6c322e534158584d4c5265616465722e352e3000000000000000000000060000
+d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff090006000000000000000000000001000000010000000000000000100000feffffff00000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffffec69d9888b8b3d4c859eaf6cd158be0f000000000000000000000000e0e1
+2f29933fcf01feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000105000000000000}}

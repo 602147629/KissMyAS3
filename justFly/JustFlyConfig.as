@@ -6,8 +6,10 @@ package justFly {
 	import justFly.event.SystemStateEvent;
 	import justFly.model.GameModel;
 	import justFly.model.GameSharedObject;
+	import justFly.view.BattleMainViewMediator;
+	import justFly.view.character.PlayerStatusInfoMediator;
+	import justFly.view.MainViewMediator;
 	import justFly.view.MonsterViewMediator;
-	import justFly.view.ViewMainMediator;
 	import net.ricogaming.slot.PrehlstoricPark.View_NG;
 	import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
 	import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
@@ -17,7 +19,10 @@ package justFly {
 	
 	/**
 	 * ...
-	 * @author sam
+	 * @copy		：Copyright (c) 2012, SOAR Digital Incorporated. All rights reserved. ( http://g8sam.site90.net )
+	 * @author		：g8sam « Just do it ™ »
+	 * @since		：2015/9/5 下午 12:03
+	 * @version	：1.0.2
 	 */
 	public class JustFlyConfig implements IConfig {
 		
@@ -45,8 +50,10 @@ package justFly {
 			/* =========================================================================== *
 			 * 映射 View (畫面) 到 相關的 Mediator (傳遞者)
 			 * =========================================================================== */
-			mediatorMap.map(View_NG).toMediator(ViewMainMediator);
+			mediatorMap.map(View_NG).toMediator(MainViewMediator);
 			mediatorMap.map(View_NG).toMediator(MonsterViewMediator);
+			mediatorMap.map(View_NG).toMediator(PlayerStatusInfoMediator);
+			mediatorMap.map(View_NG).toMediator(BattleMainViewMediator);
 			/* =========================================================================== *
 			 * 映射 Event (事件) 到 相關的 Command (命令)
 			 * =========================================================================== */
@@ -54,7 +61,6 @@ package justFly {
 			for each (var state:String in describeType(BattleStateEvent).constant.@name) {
 				commandMap.map(BattleStateEvent[state], BattleStateEvent).toCommand(BattleStateCommand);
 			}
-			
 			for each (var sysState:String in describeType(SystemStateEvent).constant.@name) {
 				commandMap.map(SystemStateEvent[sysState], SystemStateEvent).toCommand(GameRecordCommand);
 			}

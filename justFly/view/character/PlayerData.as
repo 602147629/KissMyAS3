@@ -13,11 +13,22 @@ package justFly.view.character {
 		public var charName:String = "";
 		
 		public var lv:int = 1;
-		public var money:Number = 0;
-		public var exp:Number = 0;
+		public var exp:int = 0;
+		
+		public var money:int = 0;
+		
+		public var hp:int = 0;
+		public var mp:int = 0;
+		
+		public var strength:int = 0;
+		public var agility:int = 0;
+		public var vitality:int = 0;
+		public var dexterity:int = 0;
+		public var intelligence:int = 0;
+		public var lucky:int = 0;
 		
 		public function PlayerData() {}
-	
+		
 	}
 
 }

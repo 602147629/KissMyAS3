@@ -1,4 +1,5 @@
 package justFly.model {
+	import justFly.view.character.PlayerData;
 	
 	/**
 	 * ...
@@ -10,8 +11,17 @@ package justFly.model {
 	
 	public class GameModel {
 		
-		public function GameModel() {
+		private var _playerData:PlayerData = new PlayerData();
 		
+		public function GameModel() {
+		}
+		
+		public function get playerData():PlayerData {
+			return _playerData;
+		}
+		
+		public function set playerData(value:PlayerData):void {
+			_playerData = value;
 		}
 	
 	}

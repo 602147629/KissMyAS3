@@ -1,4 +1,5 @@
 package justFly.view {
+	import com.junkbyte.console.Cc;
 	import com.traceFight.PlayerData2;
 	import flash.utils.clearTimeout;
 	import flash.utils.setTimeout;
@@ -45,7 +46,7 @@ package justFly.view {
 		}
 		
 		private function createEnemy(amount:int):void {
-			trace("createEnemy : " + amount);
+			Cc.log("createEnemy : " + amount);
 			var i:int = 0;
 			
 			for (i = 0; i < amount; i++) {
@@ -93,7 +94,7 @@ package justFly.view {
 		}
 		
 		private function startATime():void {
-			trace(" ========= startATime ========= ");
+			Cc.log(" ========= startATime ========= ");
 			var tbCount:int = this._TB_vct.length;
 			
 			for (var i:int = 0; i < tbCount; i++) {
@@ -110,7 +111,7 @@ package justFly.view {
 		
 		public function pasueATime():void {
 			clearTimeout(this._intervalID);
-			trace(" ========= pasueATime ========= ");
+			Cc.log(" ========= pasueATime ========= ");
 			var tbCount:int = this._TB_vct.length;
 			
 			for (var i:int = 0; i < tbCount; i++) {
@@ -121,24 +122,24 @@ package justFly.view {
 		
 		private function onAttackFight(e:BattleStateEvent):void {
 			var tag:int = parseInt((e.model[0] as String).slice(e.model[0].length - 1, e.model[0].length));
-			trace("onAttackFight : " + e.model[0] );
+			Cc.log("onAttackFight : " + e.model[0] );
 			
 			switch (e.model[0]) {
 			case "英雄": 
 				var target:int = Math.random() * this._moster_vct.length;
 				this._moster_vct[target].DmgIn(this._hero.AtkNum, this._hero.AtkPlusNum, this._hero._WeaponPercentNum, this._hero.ElementNum, false);
-				trace(this._hero.IDNum + "向" + this._moster_vct[target].IDNum + "攻擊" + "," + "造成" + this._moster_vct[target].MaxDmgNum + "點傷害!!" + " 怪物 [ " + tag + " ] 剩餘 HP : " + this._moster_vct[target].HPMIN);
+				Cc.log(this._hero.IDNum + "向" + this._moster_vct[target].IDNum + "攻擊" + "," + "造成" + this._moster_vct[target].MaxDmgNum + "點傷害!!" + " 怪物 [ " + tag + " ] 剩餘 HP : " + this._moster_vct[target].HPMIN);
 				break;
 			default: 
 				this._hero.DmgIn(this._moster_vct[tag].AtkNum, this._moster_vct[tag].AtkPlusNum, this._moster_vct[tag]._WeaponPercentNum, this._moster_vct[tag].ElementNum, false);
-				trace(this._moster_vct[tag].IDNum + "向" + this._hero.IDNum + "攻擊" + "," + "造成" + this._hero.MaxDmgNum + "點傷害!!" + " 英雄剩餘 HP  : " + this._hero.HPMIN);
+				Cc.log(this._moster_vct[tag].IDNum + "向" + this._hero.IDNum + "攻擊" + "," + "造成" + this._hero.MaxDmgNum + "點傷害!!" + " 英雄剩餘 HP  : " + this._hero.HPMIN);
 				if (this._hero.HPMIN <= 0 ) {
-					trace(this, " =============================================== ");
-					trace(this, " || 英雄 死亡 ----------------------- ");
-					trace(this, " =============================================== ");
+					Cc.log(this, " =============================================== ");
+					Cc.log(this, " || 英雄 死亡 ----------------------- ");
+					Cc.log(this, " =============================================== ");
 				}else {
 					this._heroHPBar.setProgress(this._hero.HPMIN , this._hero.HPMAX);
-					trace("_heroHPBar : " + this._hero.HPMIN)
+					Cc.log("_heroHPBar : " + this._hero.HPMIN)
 				}
 				
 			}

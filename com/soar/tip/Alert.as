@@ -96,7 +96,7 @@ package com.soar.tip {
 		 * @param	str
 		 */
 		public function setMsgTitle( str:String ):void {
-			this.messageTitleStr = str;
+			this._messageTitleStr = str;
 		}
 		
 		/**
@@ -108,9 +108,9 @@ package com.soar.tip {
 		 * @param	_height	警告窗體高
 		 */
 		public function show( _parent:DisplayObjectContainer = null  , _msg:String = null , isEvent:Boolean = false , _width:int = 0 , _height:int = 0 ):void {
-			this.obj = _parent;
-			this.obj.addChild(this);
-			this.msg = this._msg;
+			this._obj = _parent;
+			this._obj.addChild(this);
+			this._msg = _msg;
 			this._isEvent = isEvent;
 			
 			if (_width != 0  && _height != 0) {
@@ -120,31 +120,31 @@ package com.soar.tip {
 			
 			this.message( this._msgW , this._msgH );
 			
-			this.bmpD = new BitmapData( this._alertWidth , this._alertHeight , false , 0x000000);
-			this.bmp = new Bitmap(this.bmpD);
-			this.bmp.alpha = 0.6;
-			this.addChild(this.bmp);
+			this._bmpD = new BitmapData( this._alertWidth , this._alertHeight , false , 0x000000);
+			this._bmp = new Bitmap(this._bmpD);
+			this._bmp.alpha = 0.6;
+			this.addChild(this._bmp);
 			
-			this.msg_Tf = new TextField();
-			this.msg_fmt = new TextFormat("微軟正黑體", 20, 0xcc0000, true, null, null, null, null, "center");
-			this.msg_fmt.letterSpacing = 2;
-			this.msg_Tf.defaultTextFormat = this.msg_fmt;
-			this.msg_Tf.selectable = false;
-			this.msg_Tf.mouseEnabled = false;
-			this.msg_Tf.autoSize = TextFieldAutoSize.CENTER;
-			this.msg_Tf.antiAliasType = AntiAliasType.ADVANCED;
-			this.msg_Tf.text = this.msg;
-			this.msg_Tf.width = 400;
-			this.addChild(this.msg_Tf);
-			this.msg_Tf.x = (this._alertWidth - this.msg_Tf.width) * 0.5;
-			this.msg_Tf.y = (this._alertHeight - this.msg_Tf.height) * 0.5-10;
+			this._msg_Tf = new TextField();
+			this._msg_fmt = new TextFormat("微軟正黑體", 20, 0xcc0000, true, null, null, null, null, "center");
+			this._msg_fmt.letterSpacing = 2;
+			this._msg_Tf.defaultTextFormat = this._msg_fmt;
+			this._msg_Tf.selectable = false;
+			this._msg_Tf.mouseEnabled = false;
+			this._msg_Tf.autoSize = TextFieldAutoSize.CENTER;
+			this._msg_Tf.antiAliasType = AntiAliasType.ADVANCED;
+			this._msg_Tf.text = this._msg;
+			this._msg_Tf.width = 400;
+			this.addChild(this._msg_Tf);
+			this._msg_Tf.x = (this._alertWidth - this._msg_Tf.width) * 0.5;
+			this._msg_Tf.y = (this._alertHeight - this._msg_Tf.height) * 0.5-10;
 			
 			if (this._isEvent) {
-				this.enterBtn = new PushButton(this  , 70 , 26 , "确定" , 0, 0 , this.closeShowHandler );
-				this.addChild(this.enterBtn);
-				this.enterBtn.x = (this._alertWidth - this.enterBtn.width) * 0.5;
-				this.enterBtn.y = (_alertHeight - this.enterBtn.height) * 0.5 +46;
-				this.enterBtn.addEventListener( MouseEvent.CLICK , this.closeShowHandler);
+				this._enterBtn = new PushButton(this  , 70 , 26 , "确定" , 0, 0 , this.closeShowHandler );
+				this.addChild(this._enterBtn);
+				this._enterBtn.x = (this._alertWidth - this._enterBtn.width) * 0.5;
+				this._enterBtn.y = (_alertHeight - this._enterBtn.height) * 0.5 +46;
+				this._enterBtn.addEventListener( MouseEvent.CLICK , this.closeShowHandler);
 			}
 			
 		}
