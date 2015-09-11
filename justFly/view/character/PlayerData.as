@@ -27,6 +27,9 @@ package justFly.view.character {
 		public var intelligence:int = 0;
 		public var lucky:int = 0;
 		
+		public var dp:int = 0 //defense point
+		public var ap:int = 0 ; // atk point
+		
 		public function PlayerData() {}
 		
 	}
