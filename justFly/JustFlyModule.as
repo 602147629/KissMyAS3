@@ -1,7 +1,7 @@
 package justFly {
 	
 	import justFly.event.SystemStateEvent;
-	import justFly.view.util.JustFightUtil;
+	import justFly.utility.JustFightUtil;
 	import net.ricogaming.core.base.GameModule;
 	
 	/**

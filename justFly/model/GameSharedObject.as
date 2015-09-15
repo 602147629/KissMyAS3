@@ -2,7 +2,8 @@ package justFly.model {
 	import com.junkbyte.console.Cc;
 	import flash.net.SharedObject;
 	import justFly.view.character.PlayerData;
-	import justFly.view.util.JustFightUtil;
+	import justFly.utility.JustFightUtil;
+	import justFly.view.master.MasterInformation;
 	
 	/**
 	 * ... 
@@ -20,7 +21,7 @@ package justFly.model {
 		
 		public var so:SharedObject;
 		
-		private var _playerData:PlayerData;
+		private var _masterInfo:MasterInformation;
 		
 		public function GameSharedObject() {
 			try {
@@ -33,49 +34,73 @@ package justFly.model {
 			}
 		}
 		
+		public function clearData():void {
+			this._masterInfo = new MasterInformation();
+			this._masterInfo.money = 100;
+			this._masterInfo.goldNum = 125;
+			this._masterInfo.lv = 1;
+			this._masterInfo.exp = 2;
+			this._masterInfo.nextLvExp = 30;
+			this._masterInfo.minEnergy = 75;
+			this._masterInfo.maxEnergy = 150;
+			this.saveData(this._masterInfo);
+		}
+		
 		public function create():void {
-			this._playerData = new PlayerData();
-			this._playerData.id = this.so.data.id;
-			this._playerData.charName = this.so.data.charName;
-			this._playerData.money = this.so.data.money;
-			this._playerData.lv = this.so.data.lv;
-			this._playerData.exp = this.so.data.exp;
+			this._masterInfo = new MasterInformation();
+			this._masterInfo.uniqueId = this.so.data.uniqueId;
+			this._masterInfo.charName = this.so.data.charName;
+			this._masterInfo.money = this.so.data.money;
+			this._masterInfo.goldNum = this.so.data.goldNum;
+			this._masterInfo.lv = this.so.data.lv;
+			this._masterInfo.exp = this.so.data.exp;
+			this._masterInfo.nextLvExp = this.so.data.nextLvExp;
+			this._masterInfo.minEnergy = this.so.data.minEnergy;
+			this._masterInfo.maxEnergy = this.so.data.maxEnergy;
 			Cc.logch(this, " =============================================== ");
-			Cc.logch(this, " || create  ");
+			Cc.logch(this, " || 讀取人物資料...  ");
 			Cc.logch(this, " =============================================== ");
 		}
 		
-		public function newPlayer():void {
-			this._playerData = new PlayerData();
-			this._playerData.id = 1234567890;
-			this._playerData.charName = JustFightUtil.getInstance().createChineseName();
-			this._playerData.money = 0;
-			this._playerData.lv = 1;
-			this._playerData.exp = 0;
-			this.saveData(this._playerData);
+		public function newMaster():void {
+			this._masterInfo = new MasterInformation();
+			this._masterInfo.uniqueId = 12259527;
+			this._masterInfo.charName = JustFightUtil.getInstance().createChineseName();
+			this._masterInfo.money = 100;
+			this._masterInfo.goldNum = 125;
+			this._masterInfo.lv = 1;
+			this._masterInfo.exp = 10;
+			this._masterInfo.nextLvExp = 60;
+			this._masterInfo.minEnergy = 75;
+			this._masterInfo.maxEnergy = 150;
+			this.saveData(this._masterInfo);
 			Cc.logch(this, " =============================================== ");
-			Cc.logch(this, " || 建立新人物  : " + this._playerData.charName);
+			Cc.logch(this, " || 創建新人物資料  : " + this._masterInfo.charName);
 			Cc.logch(this, " =============================================== ");
 		}
 		
 		public function checkKey():Boolean {
-			return this.so.data.id == undefined ? false : true;
+			return this.so.data.uniqueId == undefined ? false : true;
 		}
 		
-		public function saveData(data:PlayerData):void {
+		public function saveData(data:MasterInformation):void {
 			if (this.so == null) {
 				this.so = SharedObject.getLocal("justFight", "/");
 			}
 			
-			this.so.data.id = data.id;
+			this.so.data.uniqueId = data.uniqueId;
 			this.so.data.charName = data.charName;
 			this.so.data.money = data.money;
+			this.so.data.goldNum = data.goldNum;
 			this.so.data.lv = data.lv;
 			this.so.data.exp = data.exp;
+			this.so.data.nextLvExp = data.nextLvExp;
+			this.so.data.minEnergy = data.minEnergy;
+			this.so.data.maxEnergy = data.maxEnergy;
 			this.codeExe();
 			this.so.flush();
 			Cc.logch(this, " =============================================== ");
-			Cc.logch(this, " || saveData  ");
+			Cc.logch(this, " || 記錄人物資料  ");
 			Cc.logch(this, " =============================================== ");
 		}
 		
@@ -124,8 +149,8 @@ package justFly.model {
 			return false;
 		}
 		
-		public function get playerData():PlayerData {
-			return _playerData;
+		public function get masterInfo():MasterInformation {
+			return _masterInfo;
 		}
 	
 	}

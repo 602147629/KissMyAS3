@@ -6,7 +6,7 @@ package justFly.view {
 	import justFly.event.BattleStateEvent;
 	import justFly.view.bar.HPGBar;
 	import justFly.view.bar.TimerBar;
-	import net.ricogaming.slot.PrehlstoricPark.View_NG;
+	import net.ricogaming.slot.BustyBabies.View_NG;
 	import robotlegs.bender.bundles.mvcs.Mediator;
 	
 	/**

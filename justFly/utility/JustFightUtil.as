@@ -1,4 +1,4 @@
-package justFly.view.util {
+package justFly.utility {
 	import com.junkbyte.console.Cc;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;

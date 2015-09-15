@@ -21,10 +21,11 @@ package justFly.view.bar {
 		protected var _percent:Number = 1;
 		protected var _color:uint = 0;
 		
+		protected var _ellipse:int = 0;
 		
 		public function GBar(parent:DisplayObjectContainer = null, width:Number = 0, height:Number = 0, label:String = "", xpos:Number = 0, ypos:Number = 0) {
-			super(parent, width , height , label , xpos, ypos);
-			this.label = label;
+			super(parent, width, height, label, xpos, ypos);
+			this.labelText = label;
 		}
 		
 		override protected function addChildren():void {
@@ -37,17 +38,21 @@ package justFly.view.bar {
 			super.draw();
 			
 			this._border.graphics.clear();
-			this._border.graphics.lineStyle(0, 0xFFFFFF, 0.5, true);
-			this._border.graphics.drawRoundRect(0.5, 0.5, this._width, this._height, 3, 3);
+			this._border.graphics.lineStyle(0, 0xFFFFFF, 1, true);
+			this._border.graphics.drawRoundRect(0.5, 0.5, this._width, this._height, this._ellipse, this._ellipse);
 			
 			this._fBar.graphics.clear();
 			this._fBar.graphics.lineStyle(0, 0, 0, true);
 			this._fBar.graphics.beginFill(this._color);
 			
 			//讓drawRoundRect抗鋸齒的最簡單的方法：讓x和y坐標為小數：
-			this._fBar.graphics.drawRoundRect(0.5, 0.5, Math.max(1, this._width * this._percent), this._height, 2, 2);
+			this._fBar.graphics.drawRoundRect(0.5, 0.5, Math.max(1, this._width * this._percent), this._height, this._ellipse, this._ellipse);
 			this._fBar.graphics.endFill();
-				
+			
+			this.graphics.lineStyle(0, 0, 0, false);
+			this.graphics.drawRoundRect(0.5, 0.5, this._width, this._height, this._ellipse, this._ellipse);
+			this.graphics.beginFill(0x000000, 0.6);
+			
 			this.reLabelPostion();
 		}
 		
@@ -65,7 +70,7 @@ package justFly.view.bar {
 		}
 		
 		public function setProgress(min:Number, max:Number):void {
-			if (!isNaN(min)&& !isNaN(max) && max > 0) {
+			if (!isNaN(min) && !isNaN(max) && max > 0) {
 				this._percent = Math.max(0, Math.min(1, min / max));
 				this._labelText = min + " / " + max;
 				this._label.text = this._labelText;
@@ -85,14 +90,17 @@ package justFly.view.bar {
 		// getter / setters
 		//
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
-		
-		public function set label(str:String):void {
+		public function set labelText(str:String):void {
 			this._labelText = str;
 			this.draw();
 		}
 		
-		public function get label():String {
+		public function get labelText():String {
 			return this._labelText;
+		}
+		
+		public function get label():Label {
+			return this._label;
 		}
 		
 		public function get color():uint {
@@ -116,6 +124,14 @@ package justFly.view.bar {
 			}
 		}
 		
+		public function get ellipse():int {
+			return _ellipse;
+		}
+		
+		public function set ellipse(value:int):void {
+			_ellipse = value;
+		}
+	
 	}
 
 }

@@ -1,4 +1,4 @@
-package justFly.view.util {
+package justFly.utility {
 	
 	/**
 	 * ...

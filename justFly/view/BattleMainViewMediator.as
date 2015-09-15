@@ -1,6 +1,6 @@
 package justFly.view {
 	import justFly.event.BattleStateEvent;
-	import net.ricogaming.slot.PrehlstoricPark.View_NG;
+	import net.ricogaming.slot.BustyBabies.View_NG;
 	import robotlegs.bender.bundles.mvcs.Mediator;
 	
 	/**

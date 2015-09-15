@@ -5,7 +5,7 @@ package justFly.controller {
 	import justFly.model.GameModel;
 	import justFly.model.GameSharedObject;
 	import justFly.view.character.PlayerData;
-	import justFly.view.util.JustFightUtil;
+	import justFly.utility.JustFightUtil;
 	import robotlegs.bender.bundles.mvcs.Command;
 	import robotlegs.bender.framework.api.ILogger;
 	
@@ -45,17 +45,18 @@ package justFly.controller {
 					Cc.logch(this, " =============================================== ");
 					Cc.logch(this, " || 儲存遊戲進度  ");
 					Cc.logch(this, " =============================================== ");
-					this.gso.saveData( this.model.playerData);
+					this.gso.saveData( this.model.masterInfo);
+					this.eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.UPDATA_PLAYER_INFO , ({masterInfo:this.model.masterInfo})));
 					break;
 					
 				case SystemStateEvent.LOAD_RECORD:
 					Cc.logch(this, " =============================================== ");
 					Cc.logch(this, " || 讀取遊戲進度  ");
 					Cc.logch(this, " =============================================== ");
-					this.gso.checkKey()? this.gso.create():this.gso.newPlayer();
-					this.model.playerData = this.gso.playerData;
-					this.gso.saveData( this.model.playerData);
-					this.eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.UPDATA_PLAYER_INFO , ({playerData:this.model.playerData})));
+					this.gso.checkKey()? this.gso.create():this.gso.newMaster();
+					this.model.masterInfo = this.gso.masterInfo;
+					this.gso.saveData( this.model.masterInfo);
+					this.eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.UPDATA_PLAYER_INFO , ({masterInfo:this.model.masterInfo})));
 					break;
 			}
 		}

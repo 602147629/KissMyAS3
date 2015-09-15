@@ -10,7 +10,7 @@
         private var _swingHeight:int;
         private var _waitTime:Number;
         private var _time:Number;
-        private var _rot:Number;
+        private var _rot:Number;//角度数
         private var _mtx:Matrix;
 
         public function Shake(param1:DisplayObjectContainer, param2:int, param3:int)
@@ -36,6 +36,7 @@
         public function control(param1:Number) : void
         {
             var _loc_2:* = new Matrix();
+			//当前角度数的弧度值
             var _loc_3:* = this._rot * Math.PI / 180;
             _loc_2.translate(this._swingWidth * Math.cos(_loc_3), this._swingHeight * Math.sin(_loc_3));
             var _loc_4:* = this._mtx.clone();

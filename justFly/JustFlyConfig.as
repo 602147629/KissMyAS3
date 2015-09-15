@@ -9,8 +9,9 @@ package justFly {
 	import justFly.view.BattleMainViewMediator;
 	import justFly.view.character.PlayerStatusInfoMediator;
 	import justFly.view.MainViewMediator;
+	import justFly.view.master.MasterMediator;
 	import justFly.view.MonsterViewMediator;
-	import net.ricogaming.slot.PrehlstoricPark.View_NG;
+	import net.ricogaming.slot.BustyBabies.View_NG;
 	import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
 	import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 	import robotlegs.bender.framework.api.IConfig;
@@ -54,6 +55,7 @@ package justFly {
 			mediatorMap.map(View_NG).toMediator(MonsterViewMediator);
 			mediatorMap.map(View_NG).toMediator(PlayerStatusInfoMediator);
 			mediatorMap.map(View_NG).toMediator(BattleMainViewMediator);
+			mediatorMap.map(View_NG).toMediator(MasterMediator);
 			/* =========================================================================== *
 			 * 映射 Event (事件) 到 相關的 Command (命令)
 			 * =========================================================================== */

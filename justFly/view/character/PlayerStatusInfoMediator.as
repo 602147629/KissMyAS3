@@ -3,8 +3,9 @@ package justFly.view.character {
 	import com.soar.tip.Alert;
 	import com.soar.tip.TipPop;
 	import justFly.event.SystemStateEvent;
-	import justFly.view.util.TipInforMain;
-	import net.ricogaming.slot.PrehlstoricPark.View_NG;
+	import justFly.utility.TipInforMain;
+	import justFly.view.master.MasterInformation;
+	import net.ricogaming.slot.BustyBabies.View_NG;
 	import robotlegs.bender.bundles.mvcs.Mediator;
 	
 	/**
@@ -21,27 +22,9 @@ package justFly.view.character {
 		
 		override public function initialize():void {
 			super.initialize();
-			this.addContextListener(SystemStateEvent.UPDATA_PLAYER_INFO, onUpdataPlayerInfo, SystemStateEvent);
 		}
 		
 		private function onUpdataPlayerInfo(e:SystemStateEvent):void {
-			var playerData:PlayerData = e.model.playerData;
-			Cc.logch(this, " =============================================== ");
-			Cc.logch(this, " || 更新人物資訊  ");
-			Cc.logch(this, " =============================================== ");
-			Cc.logch(this , " || Player ID : " , playerData.id);
-			Cc.logch(this , " || Player Name : " ,playerData.charName);
-			Cc.logch(this , " || Player LV : " , playerData.lv);
-			Cc.logch(this , " || Player EXP : " , playerData.exp);
-			Cc.logch(this , " || Player Money : " , playerData.money);
-			Cc.logch(this , " || Player HP : " ,playerData.hp);
-			Cc.logch(this, " =============================================== ");
-			
-			//Alert.getInstance().setAlertSize(300 , 400);
-			//Alert.getInstance().setMsgTitle("PlayerInfo");
-			//Alert.getInstance().show(this.view , playerData.charName , true  , 300 , 40 );
-			
-			TipInforMain.getInstance().show(this.view , playerData.charName  , 240 , 460 , 50 , 50);
 		}
 	
 	}

@@ -1,5 +1,5 @@
 package justFly.model {
-	import justFly.view.character.PlayerData;
+	import justFly.view.master.MasterInformation;
 	
 	/**
 	 * ...
@@ -11,17 +11,17 @@ package justFly.model {
 	
 	public class GameModel {
 		
-		private var _playerData:PlayerData = new PlayerData();
+		private var _masterInfo:MasterInformation = new MasterInformation();
 		
 		public function GameModel() {
 		}
 		
-		public function get playerData():PlayerData {
-			return _playerData;
+		public function get masterInfo():MasterInformation {
+			return _masterInfo;
 		}
 		
-		public function set playerData(value:PlayerData):void {
-			_playerData = value;
+		public function set masterInfo(value:MasterInformation):void {
+			_masterInfo = value;
 		}
 	
 	}

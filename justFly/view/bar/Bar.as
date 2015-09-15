@@ -4,7 +4,6 @@ package justFly.view.bar {
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.text.TextField;
-	import justFly.view.util.Config;
 	
 	/**
 	 * ...
@@ -32,7 +31,7 @@ package justFly.view.bar {
 			this._border = new Shape();
 			addChild(this._border);
 			
-			this._txt = Config.getSimpleTextField();
+			this._txt = new TextField();
 			this._txt.textColor = 0xFFFFFF;
 			addChild(this._txt);
 			

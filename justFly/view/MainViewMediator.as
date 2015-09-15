@@ -1,15 +1,13 @@
 package justFly.view {
 	import com.junkbyte.console.Cc;
-	import com.soar.tip.Alert;
 	import com.soar.ui.component.PushButton;
 	import flash.events.MouseEvent;
 	import justFly.event.BattleStateEvent;
 	import justFly.event.SystemStateEvent;
+	import justFly.utility.TipInforMain;
+	import justFly.utility.XMLParser;
 	import justFly.view.character.lvUp.LvUp;
-	import justFly.view.character.PlayerData;
-	import justFly.view.item.ItemDropClip;
-	import justFly.view.loading.Loading;
-	import net.ricogaming.slot.PrehlstoricPark.View_NG;
+	import net.ricogaming.slot.BustyBabies.View_NG;
 	import robotlegs.bender.bundles.mvcs.Mediator;
 	import robotlegs.bender.extensions.contextView.ContextView;
 	
@@ -35,10 +33,12 @@ package justFly.view {
 			var loadBtn:PushButton = new PushButton(this.view, 120, 19, "Load Record ", 10, 0, onLoadRecordHandler);
 			var saveBtn:PushButton = new PushButton(this.view, 120, 19, "Save Record ", 10, 30, onSaveRecordHandler);
 			var battle:PushButton = new PushButton(this.view, 120, 19, "Battle", 10, 60, onBattleFightHandler);
+			var xmlParser:XMLParser = new XMLParser();
 		}
 		
 		private function onBattleFightHandler(e:MouseEvent):void {
-			Cc.logch(" LV : " , LvUp.getInstance().getUpLv(5 , 5000 , 100));
+			Cc.logch(" LV : ", LvUp.getInstance().getUpLv(5, 5000, 100));
+			//TipInforMain.getInstance().show(this.view, "Battle", 240, 460, 50, 50);
 			eventDispatcher.dispatchEvent(new BattleStateEvent(BattleStateEvent.BATTLE_ENTER));
 		}
 		
@@ -47,7 +47,7 @@ package justFly.view {
 		}
 		
 		private function onLoadRecordHandler(e:MouseEvent):void {
-			eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.LOAD_RECORD) );
+			eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.LOAD_RECORD));
 		}
 	
 	}

@@ -49,13 +49,13 @@ package justFly.controller {
 					//eventDispatcher.dispatchEvent(new BattleStateEvent(BattleStateEvent.BATTLE_FIGHT));
 					break;
 				case BattleStateEvent.BATTLE_FINISH:
-					this.model.playerData.exp += int(Math.random() * 1000);
-					this.model.playerData.money += int(Math.random() * 1000);
+					this.model.masterInfo.exp += int(Math.random() * 6);
+					this.model.masterInfo.money += int(Math.random() * 20);
 					Cc.logch(this, " =============================================== ");
 					Cc.logch(this , " || Victory 戰勝 || " );
 					Cc.logch(this, " ------------------------------------------------------------------------------------- ");
-					Cc.logch(this , " || EXP : "  , this.model.playerData.exp);
-					Cc.logch(this , " || MONEY : " , this.model.playerData.money );
+					Cc.logch(this , " || EXP : "  , this.model.masterInfo.exp);
+					Cc.logch(this , " || MONEY : " , this.model.masterInfo.money );
 					Cc.logch(this, " =============================================== ");
 					eventDispatcher.dispatchEvent(new SystemStateEvent(SystemStateEvent.SAVE_RECORD));
 					break;
